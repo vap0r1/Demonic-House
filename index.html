@@ -337,7 +337,7 @@ loc_main: &quot;mc_house&quot;,
 loc_sub: &quot;hallway&quot;, 
 imgPath: &quot;characters/arid&quot; 
 }, 
-ECHO is off.
+ 
 demo: { 
 fname: &quot;?????&quot;, 
 lname: &quot;?????&quot;, 
@@ -359,7 +359,7 @@ rel: 10, /*relationship level*/
 desc: &quot;She is our research subject at $company.name and $char.alexc.fname&#39;s roommate.&quot;, 
 imgPath: &quot;characters/demo&quot; 
 } 
-ECHO is off.
+ 
 } 
 &gt;&gt; 
 &lt;&lt;set $scarlett to { 
@@ -400,7 +400,7 @@ _type to $args[&#39;0&#39;];
 _item to $args[&#39;1&#39;]; 
 _target to $args[&#39;2&#39;]; 
 &gt;&gt; 
-
+ 
 &lt;&lt;if _type == &quot;l&quot;&gt;&gt; 
 &lt;&lt;set    
 _imgPath to $imgpre + &quot;/&quot; + &quot;/Locations/&quot; + _item, 
@@ -412,7 +412,7 @@ _loc to $char[$args[&#39;1&#39;]],
 _imgPath to $imgpre + &quot;/&quot; + _loc.imgPath, 
 _img to _imgPath + &quot;/&quot; + _target; 
 &gt;&gt; 
-
+ 
 &lt;&lt;elseif _type == &quot;o&quot;&gt;&gt; 
 &lt;&lt;set 
 _imgPath to $imgpre + &quot;/misc&quot;, 
@@ -499,7 +499,7 @@ $player.loc_sub to _target
 &lt;&lt;else&gt;&gt; 
 &lt;&lt;set _actions.push(&quot;&lt;&lt;button \&quot;&quot; + $args[&#39;0&#39;] + &quot;\&quot; \&quot;&quot;+ $args[&#39;1&#39;] +&quot;\&quot;&gt;&gt;&quot;+$args[&#39;2&#39;]+&quot;&lt;&lt;/button&gt;&gt;&quot;)&gt;&gt; 
 &lt;&lt;/if&gt;&gt; 
-ECHO is off.
+ 
 &lt;&lt;/widget&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="Locations-Init" tags="" position="1073,1" size="100,100">&lt;&lt;set $locs to Array()&gt;&gt; 
 &lt;&lt;set $locs to { 
 mc_house: { 
@@ -541,7 +541,7 @@ locked: 0,
 target: &quot;city_main&quot; 
 } 
 }, 
-ECHO is off.
+ 
 player_home: { 
 bedroom: { 
 name: &quot;Your Bedroom&quot;, 
@@ -635,10 +635,10 @@ loc_main: &quot;Intro&quot;,
 loc_sub: &quot;Intro&quot; 
 } 
 &gt;&gt;</tw-passagedata><tw-passagedata pid="13" name="Sleep" tags="" position="1103,349" size="100,100">&lt;&lt;if $quest.intro.release is 1&gt;&gt; 
-ECHO is off.
+ 
 &lt;&lt;narration &quot;While recovering you begin to dream of your $char.arid.relp&quot;&gt;&gt; 
 &lt;&lt;bimg &quot;c&quot; &quot;arid&quot; &quot;dream1.gif&quot;&gt;&gt; 
-ECHO is off.
+ 
 &lt;&lt;action &quot;Wake Up&quot; &quot;mc_house-mc_bedroom&quot; &quot;&lt;&lt;set $quest.intro.release to 2&gt;&gt;&quot;&gt;&gt; 
 &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="14" name="Start-1" tags="" position="1504,516" size="100,100">&lt;&lt;bimg &quot;c&quot; &quot;scar&quot; &quot;1_002.jpeg&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="15" name="Start" tags="nobr" position="1101,238" size="100,100">&lt;&lt;set  
 $player.loc_main to &quot;mc_house&quot;, 
@@ -690,30 +690,30 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: &quot;Roboto&quot;, sans-serif}
 &lt;div class=&quot;w3-content w3-margin-top&quot; style=&quot;max-width:1400px;&quot;&gt; 
 &lt;-- The Grid --&gt; 
 &lt;div class=&quot;w3-row-padding&quot;&gt; 
-ECHO is off.
+ 
 &lt;-- Left Column --&gt; 
 &lt;div id=&quot;menu&quot; data-passage=&quot;Menu&quot; class=&quot;w3-third&quot;&gt; 
-ECHO is off.
+ 
 &lt;-- End Left Column --&gt; 
 &lt;/div&gt; 
 &lt;div id=&quot;actions&quot; data-passage=&quot;Actions&quot; class=&quot;w3-third&quot;&gt; 
 &lt;/div&gt; 
 &lt;-- Right Column --&gt; 
 &lt;div class=&quot;w3-twothird&quot;&gt; 
-ECHO is off.
+ 
 &lt;div id=&quot;passages&quot; class=&quot;w3-container w3-card w3-white w3-margin-bottom&quot;&gt; 
-ECHO is off.
+ 
 &lt;/div&gt; 
 &lt;-- End Right Column --&gt; 
-ECHO is off.
+ 
 &lt;/div&gt; 
 &lt;-- End Grid --&gt; 
 &lt;/div&gt; 
-ECHO is off.
+ 
 &lt;-- End Page Container --&gt; 
 &lt;/div&gt; 
 &lt;footer class=&quot;w3-container w3-teal w3-center w3-margin-top&quot;&gt; 
-ECHO is off.
+ 
 &lt;/footer&gt; 
 &lt;/body&gt; 
 &lt;/html&gt;</tw-passagedata><tw-passagedata pid="20" name="StoryMenu" tags="" position="16,294" size="100,100">[[New story link|Start]]</tw-passagedata><tw-passagedata pid="21" name="StorySubtitle" tags="" position="514,3" size="100,100">Version: 0.0.1</tw-passagedata><tw-passagedata pid="22" name="Text Widgets" tags="widget" position="1453,70" size="100,100">&lt;&lt;widget &quot;dialog&quot;&gt;&gt; 
@@ -753,8 +753,8 @@ hour: 11,
 day: 1, 
 pod: 1, /* 0 early morning, 1 morning, 2 afternoon, 3 evening, 4 night*/  
 dow: 2, /*day of week*/ 
-ECHO is off.
-ECHO is off.
+ 
+ 
 weekday: [&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;], 
 period: [&quot;Early Morning&quot;,&quot;Morning&quot;,&quot;Afternoon&quot;,&quot;Evening&quot;,&quot;Night&quot;] 
 } 

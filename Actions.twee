@@ -1,0 +1,25 @@
+:: Actions {"position":"10,439","size":"100,100"} 
+<div class="w3-white w3-text-grey w3-card-4"> 
+<div class="w3-display-container"> 
+<div id="locations-title"><p style="color: black;text-align: center;background-color: grey;margin: unset;">Locations</p></div> 
+<div id="locations" class="locations"> 
+<<locations>>	 
+</div> 
+<div><p style="color: black;text-align: center;background-color: grey;margin: unset;">Actions</p></div> 
+<div id="action-bar" class="action-bar"> 
+<<if def _actions>> 
+<<for _i to 0; _i lt _actions.length; _i++>> 
+<<=_actions[_i]>> 
+<</for>> 
+<</if>> 
+</div> 
+<br> 
+</div> 
+</div><br> 
+<<if $system.locations is 0>> 
+<style> 
+#locations-title, #locations { 
+display: none; 
+} 
+</style> 
+<</if>> 

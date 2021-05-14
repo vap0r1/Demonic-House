@@ -1,0 +1,16 @@
+:: old location widget {"position":"1733,45","size":"100,100"} 
+<<widget "locations">> 
+<<for _i, _name range $locs[$player.loc_main]>> 
+<<if _i is $player.loc_sub>> 
+<div class="location grey"> 
+[img[$imgpre + "/Locations/" + $player.loc_main + "/" + _i + ".jpg"]] 
+<div class="location-name"><<=_name>></div> 
+</div> 
+<<else>> 
+<div class="location"> 
+[img[$imgpre + "/Locations/" + $player.loc_main + "/" + _i + ".jpg"][$player.loc_main + "_" + _i]] 
+<div class="location-name">_name</div> 
+</div> 
+<</if>> 
+<</for>> 
+<</widget>> 

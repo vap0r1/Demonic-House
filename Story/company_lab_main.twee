@@ -1,0 +1,8 @@
+:: company_lab_main {"position":"833,805","size":"100,100"} 
+<<set  
+$player.loc_main to "company", 
+$player.loc_sub to "lab_main" 
+>> 
+<<if $quest.intro.run is 1>> 
+<<goto "lab_intro">> 
+<</if>> 

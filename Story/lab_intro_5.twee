@@ -1,0 +1,10 @@
+:: lab_intro_5 {"position":"93,846","size":"100,100"} 
+<<narration "Before shutting down the system you record down the data from the experiment and then switch it with another sessions data. Just as you finish $char.alexc.fname walks into the room.">> 
+<<bimg "c" "alexc" "intro.jpg">> 
+<<dialog "alexc" "What did you do? I saw $char.kyler.fname in the lobby and she did not look well. Did you fuck up?">> 
+<<dialog "player" "No I did not fuck up. There was no change from the previous session. We will need to go back to the drawing board.">> 
+<<dialog "alexc" "ARGH Damnit. Clean up while I go talk with $char.scar.display and then go home.">> 
+<<dialog "player" "Will do.">> 
+<<act "$char.alexc.fname leaves.">> 
+<<narration "After a long day of work and dealing with your co-workers you decide to get some sleep before working on your own side project in the morning.">> 
+<<action "Go Home" "home_intro" "">> 

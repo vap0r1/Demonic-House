@@ -1,0 +1,4 @@
+:: demon-talk-1 {"position":"1204,447.5","size":"100,100"} 
+<<act "Having made your decision you reach out and touch the seal">> 
+<<narration "Finally done you see some kind of ritualistic magic circle that is slightly glowing in a red light. The top most icon is glowing brighter and you feel the sudden urge to touch it.">> 
+<<dialog "demo" "Touch.... Th....e.... Seal....">> 

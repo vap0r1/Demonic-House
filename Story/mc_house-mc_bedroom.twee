@@ -1,0 +1,7 @@
+:: mc_house-mc_bedroom {"position":"901,400","size":"100,100"} 
+<<set $player.loc to "Home - Your Bedroom">> 
+<<bimg "l" "mc_house" "mc_bedroom-3.jpg">> 
+<<if $quest.intro.release == 2>> 
+<<action "Sleep" "Sleep" "">> 
+<<action "Talk to Demon" "Demon-talk-1" "<<set $quest.intro.release to 3>>">> 
+<</if>> 

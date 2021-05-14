@@ -1,0 +1,12 @@
+:: home_intro {"position":"221,845","size":"100,100"} 
+<<set  
+$player.loc_main = "player_home",  
+$player.loc_sub = "bedroom", 
+$locs.company.lab_hallway.found = 1, 
+$locs.company.lobby.found = 1, 
+$locs.company.city_main.found = 1, 
+$system.locations to 1 
+>> 
+<<narration "After a long day of work and dealing with your co-workers you decide to get some sleep before working on your own side project in the morning.">> 
+<<bimg "o" "alarm.jpg">> 
+<<action "Wake Up" "home_intro_2" "<<set $quest.intro.run is 0>>">> 

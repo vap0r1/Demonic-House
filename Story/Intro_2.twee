@@ -1,0 +1,13 @@
+:: Intro_2 [autosave] {"position":"459,500","size":"100,100"} 
+<<set  
+$locs.mc_house.hallway.found to 1, 
+$locs.mc_house.hallway.locked to 1 
+>> 
+<<narration "You scrub away at the poem on the wall. Slowly you start to notice something beneath the paint.">> 
+<<bimg "l" "mc_house" "mc_bedroom-3.jpg">> 
+<<narration "Finally done you see some kind of ritualistic magic circle that is slightly glowing in a red light. The top most icon is glowing brighter and you feel the sudden urge to touch it.">> 
+<<dialog "demo" "Touch.... Th....e.... Seal....">> 
+<<act "Having made your decision you reach out and touch the seal">> 
+<<narration "The moment your hand touches the seal you feel as though your very life is draining from your through your hand. As the world dims around you, you faintly hear...">> 
+<<dialog "demo" "Finally..... I have regained some of my power... Soon with your help I will make those who locked me into this prison pay a most horrible price. For now, sleep my young servent.">> 
+<<action "Sleep" "Sleep" "<<set $quest.intro.release to 1>>">> 

@@ -1,0 +1,23 @@
+:: Intro_1 {"position":"343,498","size":"100,100"} 
+<<set  
+$locs.mc_house.hallway.found to 1, 
+$locs.mc_house.hallway.locked to 1 
+>> 
+<<move "p" "mc_house" "hallway">> 
+<<narration "After finishing unpacking you realize you're a bit hungry and decide to go order some food.">> 
+<<bimg "c" "arid" "intro.jpg">> 
+<<dialog "arid" "Where do you think you're going? I've already ordered food if thats what you're thinking. The pizza should be here soon. It's your favorite..... combination.">> 
+<<narration "You turn to look at $char.arid.fname in rage as she knows full well you hate onions on your pizza. You decide to just go back to your room.">> 
+<<move "p" "mc_house" "mc_bedroom">> 
+<<narration "As you enter your new room you hear a noise coming from the wall the strange inscription is on. You move closer to investigate it and swear you can almost hear someone talking to you. You reach out to touch the inscription.">> 
+<<dialog "demo" "Rem... ove.... the... s..e...a.....l... dark.... de...si....res....">> 
+<<narration "You stumble back in fear wondering if you had finally lost your mind.">> 
+<<dialog "demo" "Yesss... Good.... The... Seal.... Weakens.... Release.... Me..... I will.... Grant...... Your...... Desires....">> 
+<<narration "As the voice becomes more clear you realize in your panic to get away from the wall you had scraped one of the words off the inscription. Summoning up what little courage you have left at the thought of wishes you speak to the wall.">> 
+<<dialog "player" "If I scrub off this inscription you will grant me what anything I desire? Like a genies three wishes?">> 
+<<dialog "demo" "No..... I.... Can.... Only.... Fulfill.... Your.... Sexual... Desires.....">> 
+<<dialog "player" "What do you mean my sexual desires? I release you and you just give me a quick wank as a thank you?">> 
+<<dialog "demo" "No, I..... Will.... Grant.... You.... The.... Tarts... Living... In.... This.... Prison....">> 
+<<narration "Being a hot blooded man you of course had thought about your sister naked before but never had you thought of making her yours. Now if what this voice said is true not only will your sister be yours to do with as you please so would your mother.... Thinking about it you realize for perhaps the first time how truely attractive the two of them are and seriously consider helping to release the voice.">> 
+<<action "Scrub Wall" "Intro_2" "<<set $quest.intro.scrub to 1>>">> 
+<<action "Ignore The Voice" "End" "<<set $quest.intro.scrub to 1>>">> 

@@ -1,0 +1,10 @@
+:: Notifications {"position":"130,441","size":"100,100"} 
+Notifications 
+/*$(document).on(':passageinit', function (ev) { 
+var sv = State.variables; 
+}); 
+Config.saves.onLoad = function (save) { 
+alert("loaded"); 
+Engine.play("Save-Update", true) 
+}; 
+*/ 

@@ -1,0 +1,20 @@
+:: Start [nobr] {"position":"1101,238","size":"100,100"} 
+<<set  
+$player.loc_main to "mc_house", 
+$player.loc_sub to "mc_bedroom", 
+$locs.mc_house.hallway.found to 0, 
+$quest.intro.run to 1 
+>> 
+<<bimg "l" "mc_house" "mc_bedroom.jpg">> 
+<<narration "Looking around the room you notice an inscription on the wall, as you focus on it you feel an odd chill flow down your spine. Before you can investigate the inscription more closely you hear your $char.laud.title walk up behind you.">> 
+<<dialog "laud" "So what do you think of your new room?">> 
+<<bimg "c" "laud" "intro.jpg">> 
+<<narration "This is your $char.laud.title, despite her looks she is actually $char.laud.age years old. And she is the reason you and your sister had to move to this god forsaken town. After catching your father cheating she decided it would be good for you all to make a new start here.">> 
+<<dialog "player" "I'm still not happy about moving but I guess this shithole will have to do. It's not like I have much choice.">> 
+<<dialog "laud" "I know its not the best $player.fname, but its the best we can do right now. I'm sorry that I took you away from everyone you know, but it was for the best. I really hope you understand that.">> 
+<<dialog "player" "Yea, Whatever. Can you just let me suffer in peace now?">> 
+<<dialog "laud" "Fine, I just wanted to say goodbye before I left to settle everything we left behind. I left you cash to order you and your sister food. Make sure to take care of her while I'm gone.">> 
+<<act "Your $char.laud.title leaves the room">> 
+<<narration "You just grunt your assent as you proceed to unpack your meager belongings. Seeing your response your $char.laud.title leaves the room, shutting the door behind her.">> 
+<<move "c" "laud" "blank" "blank">> 
+<<action "Unpack Boxes" "Intro_1" "<<set $quest.intro.unpack to 1>>">> 

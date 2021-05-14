@@ -1,0 +1,48 @@
+:: Location Widgets [widget] {"position":"1303,67","size":"100,100"} 
+<<widget "locations">> 
+<<for _i, _nam range $locs[$player.loc_main]>> 
+<<set _name to _nam.name>> 
+<<if _nam.found is 1 or _nam.hidden is 1>> 
+<<if _i is $player.loc_sub or _nam.locked is 1>> 
+<div class="location grey"> 
+[img[$imgpre + "/Locations/" + $player.loc_main + "/" + _i + ".jpg"]] 
+<div class="location-name"><<=_name>></div> 
+</div> 
+<<else>> 
+<div class="location"> 
+<<set _linke to $player.loc_main + "_" + _i>> 
+<a @data-passage="_linke">  
+[img[_name|$imgpre + "/Locations/" + $player.loc_main + "/" + _i + ".jpg"]]<div class="location-name"><<=_name>></div></a> 
+</div> 
+<</if>> 
+<</if>> 
+<</for>> 
+<</widget>>  
+<<widget "move">> 
+<<set  
+_type to $args['0'], 
+_object to $args['1'], 
+_target to $args['2'], 
+_subtarg to $args['3'] 
+>> 
+<<if _type is "c">> 
+<<set 
+$char[_object].loc_main to _target, 
+$char[_object].loc_sub to _subtarg 
+>> 
+<<elseif _type is "p">> 
+<<set 
+$player.loc_main to _object, 
+$player.loc_sub to _target 
+>> 
+<</if>> 
+<</widget>> 
+<<widget "action">> 
+<<if ndef _actions>> 
+<<set _actions to []>> 
+<<set _actions.push("<<button \"" + $args['0'] + "\" \""+ $args['1'] +"\">>"+$args['2']+"<</button>>")>> 
+<<else>> 
+<<set _actions.push("<<button \"" + $args['0'] + "\" \""+ $args['1'] +"\">>"+$args['2']+"<</button>>")>> 
+<</if>> 
+ECHO is off.
+<</widget>> 

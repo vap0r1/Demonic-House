@@ -1,0 +1,18 @@
+:: Time Widgets [widget] {"position":"1301,182","size":"100,100"} 
+:: Time {"position":"332,128","size":"100,100"} 
+<<if $time.hour gte 23>> 
+<<set  
+$time.hour to 0, 
+$time.day++, 
+$time.pod to 4, 
+$time.dow++ 
+>> 
+<<elseif $time.hour gte 18 and $time.hour lte 23>> 
+<<set $time.pod to 3>> 
+<<elseif $time.hour gte 12 and $time.hour lte 17>> 
+<<set $time.pod to 2>> 
+<<elseif $time.hour gte 8 and $time.hour lte 11>> 
+<<set $time.pod to 1>> 
+<<elseif $time.hour gte 4 and $time.hour lte 7>> 
+<<set $time.pod to 0>> 
+<</if>> 

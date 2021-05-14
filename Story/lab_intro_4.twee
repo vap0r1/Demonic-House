@@ -1,0 +1,11 @@
+:: lab_intro_4 {"position":"0,847","size":"100,100"} 
+<<narration "As you start to make the adjustments an idea occurs to you to also change the data being sent. You quickly type up a short document with commands for $char.kyler.fname to touch herself. Almost immediately you notice a stronger reaction from $char.kyler.fname.">> 
+<<bimg "c" "kyler" "intro6.jpg">> 
+<<dialog "kyler" "Nooo... Why does.. Why does it feel even better now? No. I don't want to touch myself...">> 
+<<narration "$char.kyler.fname stands up and seems to be struggling with the commands. So you raise the amplitude again.">> 
+<<dialog "player" "Ms. $char.kyler.lname, I'm working as quickly as I can but while I'm trying to fix this can you describe what you are feeling?">> 
+<<dialog "kyler" "It... Feels like every inch of my body is writhing in pleasure.... And I hear a voice telling me... to touch myself... I can't... control myself anymore...">> 
+<<bimg "c" "kyler" "intro7.jpg">> 
+<<narration "Realizing you have discovered an amazing new branch of \"research\" knowing that $char.alexc.fname would be back soon you restore the system to the original settings.">> 
+<<dialog "player" "Alright Ms. $char.kyler.lname, I think we have enough data for today. If you will see the receptionist she will make sure to give you your pay for this session">> 
+<<action "Shutdown System" "lab_intro_5" "">> 

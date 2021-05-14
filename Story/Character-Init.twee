@@ -68,7 +68,7 @@ loc_main: "mc_house",
 loc_sub: "hallway", 
 imgPath: "characters/arid" 
 }, 
-ECHO is off.
+ 
 demo: { 
 fname: "?????", 
 lname: "?????", 
@@ -90,7 +90,7 @@ rel: 10, /*relationship level*/
 desc: "She is our research subject at $company.name and $char.alexc.fname's roommate.", 
 imgPath: "characters/demo" 
 } 
-ECHO is off.
+ 
 } 
 >> 
 <<set $scarlett to { 

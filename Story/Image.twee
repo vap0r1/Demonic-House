@@ -19,7 +19,7 @@ _type to $args['0'];
 _item to $args['1']; 
 _target to $args['2']; 
 >> 
-
+ 
 <<if _type == "l">> 
 <<set    
 _imgPath to $imgpre + "/" + "/Locations/" + _item, 
@@ -31,7 +31,7 @@ _loc to $char[$args['1']],
 _imgPath to $imgpre + "/" + _loc.imgPath, 
 _img to _imgPath + "/" + _target; 
 >> 
-
+ 
 <<elseif _type == "o">> 
 <<set 
 _imgPath to $imgpre + "/misc", 

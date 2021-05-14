@@ -1,8 +1,8 @@
 :: Sleep {"position":"1103,349","size":"100,100"} 
 <<if $quest.intro.release is 1>> 
-ECHO is off.
+ 
 <<narration "While recovering you begin to dream of your $char.arid.relp">> 
 <<bimg "c" "arid" "dream1.gif">> 
-ECHO is off.
+ 
 <<action "Wake Up" "mc_house-mc_bedroom" "<<set $quest.intro.release to 2>>">> 
 <</if>> 

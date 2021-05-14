@@ -4,8 +4,8 @@ hour: 11,
 day: 1, 
 pod: 1, /* 0 early morning, 1 morning, 2 afternoon, 3 evening, 4 night*/  
 dow: 2, /*day of week*/ 
-ECHO is off.
-ECHO is off.
+ 
+ 
 weekday: ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], 
 period: ["Early Morning","Morning","Afternoon","Evening","Night"] 
 } 

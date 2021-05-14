@@ -44,5 +44,5 @@ $player.loc_sub to _target
 <<else>> 
 <<set _actions.push("<<button \"" + $args['0'] + "\" \""+ $args['1'] +"\">>"+$args['2']+"<</button>>")>> 
 <</if>> 
-ECHO is off.
+ 
 <</widget>> 

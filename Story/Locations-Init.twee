@@ -40,7 +40,7 @@ locked: 0,
 target: "city_main" 
 } 
 }, 
-ECHO is off.
+ 
 player_home: { 
 bedroom: { 
 name: "Your Bedroom", 

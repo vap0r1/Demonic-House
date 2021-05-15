@@ -245,29 +245,31 @@ Config.saves.autosave = ["bookmark", "autosave"];
 Config.saves.id = "DemonHouse"; 
 Config.passages.descriptions = { 
 "Intro_2" : "description" 
-};</script><tw-tag name="Widget" color="purple"></tw-tag><tw-passagedata pid="1" name="Actions" tags="" position="10,439" size="100,100">&lt;div class=&quot;w3-white w3-text-grey w3-card-4&quot;&gt; 
-&lt;div class=&quot;w3-display-container&quot;&gt; 
-&lt;div id=&quot;locations-title&quot;&gt;&lt;p style=&quot;color: black;text-align: center;background-color: grey;margin: unset;&quot;&gt;Locations&lt;/p&gt;&lt;/div&gt; 
-&lt;div id=&quot;locations&quot; class=&quot;locations&quot;&gt; 
-&lt;&lt;locations&gt;&gt;	 
-&lt;/div&gt; 
-&lt;div&gt;&lt;p style=&quot;color: black;text-align: center;background-color: grey;margin: unset;&quot;&gt;Actions&lt;/p&gt;&lt;/div&gt; 
-&lt;div id=&quot;action-bar&quot; class=&quot;action-bar&quot;&gt; 
-&lt;&lt;if def _actions&gt;&gt; 
-&lt;&lt;for _i to 0; _i lt _actions.length; _i++&gt;&gt; 
-&lt;&lt;=_actions[_i]&gt;&gt; 
-&lt;&lt;/for&gt;&gt; 
-&lt;&lt;/if&gt;&gt; 
-&lt;/div&gt; 
-&lt;br&gt; 
-&lt;/div&gt; 
-&lt;/div&gt;&lt;br&gt; 
-&lt;&lt;if $system.locations is 0&gt;&gt; 
-&lt;style&gt; 
-#locations-title, #locations { 
-display: none; 
-} 
-&lt;/style&gt; 
+};</script><tw-tag name="Widget" color="purple"></tw-tag><tw-passagedata pid="1" name="Actions" tags="" position="10,439" size="100,100">&lt;div class=&quot;w3-white w3-text-grey w3-card-4&quot;&gt;
+        &lt;div class=&quot;w3-display-container&quot;&gt;
+			&lt;div id=&quot;locations-title&quot;&gt;&lt;p style=&quot;color: black;text-align: center;background-color: grey;margin: unset;&quot;&gt;Locations&lt;/p&gt;&lt;/div&gt;
+&lt;div id=&quot;locations&quot; class=&quot;locations&quot;&gt;
+&lt;&lt;locations&gt;&gt;
+		&lt;/div&gt;
+			&lt;div&gt;&lt;p style=&quot;color: black;text-align: center;background-color: grey;margin: unset;&quot;&gt;Actions&lt;/p&gt;&lt;/div&gt;
+			&lt;div id=&quot;action-bar&quot; class=&quot;action-bar&quot;&gt;
+			&lt;&lt;if def _actions&gt;&gt;
+			  &lt;&lt;for _i to 0; _i lt _actions.length; _i++&gt;&gt;
+				  &lt;&lt;=_actions[_i]&gt;&gt;
+			  &lt;&lt;/for&gt;&gt;
+			&lt;&lt;/if&gt;&gt;
+
+			&lt;/div&gt;
+
+          &lt;br&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;&lt;br&gt;
+&lt;&lt;if $system.locations is 0&gt;&gt;
+&lt;style&gt;
+#locations-title, #locations {
+display: none;
+}
+&lt;/style&gt;
 &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="Character-Init" tags="" position="946,0" size="100,100">/*
 trust:
 	below zero: oblivion of trust.
@@ -386,48 +388,52 @@ rel:
 					}
 
 
-&gt;&gt;</tw-passagedata><tw-passagedata pid="3" name="Image Widgets" tags="widget" position="1595,63" size="100,100">&lt;&lt;widget &quot;portrait&quot;&gt;&gt; 
-&lt;&lt;set _i to $args[&#39;0&#39;]&gt;&gt; 
-&lt;&lt;if _i == &quot;player&quot;&gt;&gt; 
-&lt;&lt;set _name to $player.name&gt;&gt; 
-&lt;&lt;set _imagepath to $imgpre + &#39;/thumbs/avatar_male.jpg&#39;&gt;&gt; 
-&lt;&lt;elseif _i == &quot;author&quot;&gt;&gt; 
-&lt;&lt;set _name to &quot;Mysterious Figure&quot;&gt;&gt; 
-&lt;&lt;set _imagepath to $imgpre + &#39;/thumbs/smith.jpg&#39;&gt;&gt; 
-&lt;&lt;else&gt;&gt; 
-&lt;&lt;set _name to $char[_i].name&gt;&gt; 
-&lt;&lt;set _imagepath to $imgpre + &#39;/thumbs/&#39; + _i +&#39;.jpg&#39;&gt;&gt; 
-&lt;&lt;/if&gt;&gt; 
-&lt;&lt;set $portt to _imagepath&gt;&gt; 
-&lt;&lt;/widget&gt;&gt; 
-&lt;&lt;widget &quot;bimg&quot;&gt;&gt; 
-&lt;&lt;set 
-_type to $args[&#39;0&#39;]; 
-_item to $args[&#39;1&#39;]; 
-_target to $args[&#39;2&#39;]; 
-&gt;&gt; 
- 
-&lt;&lt;if _type == &quot;l&quot;&gt;&gt; 
-&lt;&lt;set    
-_imgPath to $imgpre + &quot;/&quot; + &quot;/Locations/&quot; + _item, 
-_img to _imgPath + &quot;/&quot; + _target; 
-&gt;&gt; 
-&lt;&lt;elseif _type == &quot;c&quot;&gt;&gt; 
-&lt;&lt;set 
-_loc to $char[$args[&#39;1&#39;]], 
-_imgPath to $imgpre + &quot;/&quot; + _loc.imgPath, 
-_img to _imgPath + &quot;/&quot; + _target; 
-&gt;&gt; 
- 
-&lt;&lt;elseif _type == &quot;o&quot;&gt;&gt; 
-&lt;&lt;set 
-_imgPath to $imgpre + &quot;/misc&quot;, 
-_img to _imgPath + &quot;/&quot; + $args[&#39;1&#39;]; 
-&gt;&gt; 
-&lt;&lt;/if&gt;&gt; 
-&lt;div id=&quot;bimage&quot; class=&quot;bimage&quot;&gt; 
-[img[test|_img]] 
-&lt;/div&gt; 
+&gt;&gt;</tw-passagedata><tw-passagedata pid="3" name="Image Widgets" tags="widget" position="1595,63" size="100,100">&lt;&lt;widget &quot;portrait&quot;&gt;&gt;
+&lt;&lt;set _i to $args[&#39;0&#39;]&gt;&gt;
+&lt;&lt;if _i == &quot;player&quot;&gt;&gt;
+&lt;&lt;set _name to $player.name&gt;&gt;
+&lt;&lt;set _imagepath to $imgpre + &#39;/thumbs/avatar_male.jpg&#39;&gt;&gt;
+&lt;&lt;elseif _i == &quot;author&quot;&gt;&gt;
+&lt;&lt;set _name to &quot;Mysterious Figure&quot;&gt;&gt;
+&lt;&lt;set _imagepath to $imgpre + &#39;/thumbs/smith.jpg&#39;&gt;&gt;
+&lt;&lt;else&gt;&gt;
+&lt;&lt;set _name to $char[_i].name&gt;&gt;
+&lt;&lt;set _imagepath to $imgpre + &#39;/thumbs/&#39; + _i +&#39;.jpg&#39;&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;set $portt to _imagepath&gt;&gt;
+&lt;&lt;/widget&gt;&gt;
+
+
+
+&lt;&lt;widget &quot;bimg&quot;&gt;&gt;
+	  &lt;&lt;set
+	  		_type to $args[&#39;0&#39;];
+			_item to $args[&#39;1&#39;];
+			_target to $args[&#39;2&#39;];
+	  &gt;&gt;
+
+	  &lt;&lt;if _type == &quot;l&quot;&gt;&gt;
+		  &lt;&lt;set
+				_imgPath to $imgpre + &quot;/&quot; + &quot;/Locations/&quot; + _item,
+				_img to _imgPath + &quot;/&quot; + _target;
+		  &gt;&gt;
+	 &lt;&lt;elseif _type == &quot;c&quot;&gt;&gt;
+	  		&lt;&lt;set
+				_loc to $char[$args[&#39;1&#39;]],
+				_imgPath to $imgpre + &quot;/&quot; + _loc.imgPath,
+				_img to _imgPath + &quot;/&quot; + _target;
+			&gt;&gt;
+
+
+  	 &lt;&lt;elseif _type == &quot;o&quot;&gt;&gt;
+	  		&lt;&lt;set
+				_imgPath to $imgpre + &quot;/misc&quot;,
+				_img to _imgPath + &quot;/&quot; + $args[&#39;1&#39;];
+			&gt;&gt;
+	  &lt;&lt;/if&gt;&gt;
+	  &lt;div id=&quot;bimage&quot; class=&quot;bimage&quot;&gt;
+	   [img[test|_img]]
+	   &lt;/div&gt;
 &lt;&lt;/widget&gt;&gt;</tw-passagedata><tw-passagedata pid="4" name="Intro_1" tags="" position="343,498" size="100,100">&lt;&lt;set  
 $locs.mc_house.hallway.found to 1, 
 $locs.mc_house.hallway.locked to 1 
@@ -460,52 +466,59 @@ $locs.mc_house.hallway.locked to 1
 &lt;&lt;act &quot;Having made your decision you reach out and touch the seal&quot;&gt;&gt; 
 &lt;&lt;narration &quot;The moment your hand touches the seal you feel as though your very life is draining from your through your hand. As the world dims around you, you faintly hear...&quot;&gt;&gt; 
 &lt;&lt;dialog &quot;demo&quot; &quot;Finally..... I have regained some of my power... Soon with your help I will make those who locked me into this prison pay a most horrible price. For now, sleep my young servent.&quot;&gt;&gt; 
-&lt;&lt;action &quot;Sleep&quot; &quot;Sleep&quot; &quot;&lt;&lt;set $quest.intro.release to 1&gt;&gt;&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="Location Widgets" tags="widget" position="1303,67" size="100,100">&lt;&lt;widget &quot;locations&quot;&gt;&gt; 
-&lt;&lt;for _i, _nam range $locs[$player.loc_main]&gt;&gt; 
-&lt;&lt;set _name to _nam.name&gt;&gt; 
-&lt;&lt;if _nam.found is 1 or _nam.hidden is 1&gt;&gt; 
-&lt;&lt;if _i is $player.loc_sub or _nam.locked is 1&gt;&gt; 
-&lt;div class=&quot;location grey&quot;&gt; 
-[img[$imgpre + &quot;/Locations/&quot; + $player.loc_main + &quot;/&quot; + _i + &quot;.jpg&quot;]] 
-&lt;div class=&quot;location-name&quot;&gt;&lt;&lt;=_name&gt;&gt;&lt;/div&gt; 
-&lt;/div&gt; 
-&lt;&lt;else&gt;&gt; 
-&lt;div class=&quot;location&quot;&gt; 
-&lt;&lt;set _linke to $player.loc_main + &quot;_&quot; + _i&gt;&gt; 
-&lt;a @data-passage=&quot;_linke&quot;&gt;  
-[img[_name|$imgpre + &quot;/Locations/&quot; + $player.loc_main + &quot;/&quot; + _i + &quot;.jpg&quot;]]&lt;div class=&quot;location-name&quot;&gt;&lt;&lt;=_name&gt;&gt;&lt;/div&gt;&lt;/a&gt; 
-&lt;/div&gt; 
-&lt;&lt;/if&gt;&gt; 
-&lt;&lt;/if&gt;&gt; 
-&lt;&lt;/for&gt;&gt; 
-&lt;&lt;/widget&gt;&gt;  
-&lt;&lt;widget &quot;move&quot;&gt;&gt; 
-&lt;&lt;set  
-_type to $args[&#39;0&#39;], 
-_object to $args[&#39;1&#39;], 
-_target to $args[&#39;2&#39;], 
-_subtarg to $args[&#39;3&#39;] 
-&gt;&gt; 
-&lt;&lt;if _type is &quot;c&quot;&gt;&gt; 
-&lt;&lt;set 
-$char[_object].loc_main to _target, 
-$char[_object].loc_sub to _subtarg 
-&gt;&gt; 
-&lt;&lt;elseif _type is &quot;p&quot;&gt;&gt; 
-&lt;&lt;set 
-$player.loc_main to _object, 
-$player.loc_sub to _target 
-&gt;&gt; 
-&lt;&lt;/if&gt;&gt; 
-&lt;&lt;/widget&gt;&gt; 
-&lt;&lt;widget &quot;action&quot;&gt;&gt; 
-&lt;&lt;if ndef _actions&gt;&gt; 
-&lt;&lt;set _actions to []&gt;&gt; 
-&lt;&lt;set _actions.push(&quot;&lt;&lt;button \&quot;&quot; + $args[&#39;0&#39;] + &quot;\&quot; \&quot;&quot;+ $args[&#39;1&#39;] +&quot;\&quot;&gt;&gt;&quot;+$args[&#39;2&#39;]+&quot;&lt;&lt;/button&gt;&gt;&quot;)&gt;&gt; 
-&lt;&lt;else&gt;&gt; 
-&lt;&lt;set _actions.push(&quot;&lt;&lt;button \&quot;&quot; + $args[&#39;0&#39;] + &quot;\&quot; \&quot;&quot;+ $args[&#39;1&#39;] +&quot;\&quot;&gt;&gt;&quot;+$args[&#39;2&#39;]+&quot;&lt;&lt;/button&gt;&gt;&quot;)&gt;&gt; 
-&lt;&lt;/if&gt;&gt; 
- 
+&lt;&lt;action &quot;Sleep&quot; &quot;Sleep&quot; &quot;&lt;&lt;set $quest.intro.release to 1&gt;&gt;&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="Location Widgets" tags="widget" position="1303,67" size="100,100">&lt;&lt;widget &quot;locations&quot;&gt;&gt;
+
+&lt;&lt;for _i, _nam range $locs[$player.loc_main]&gt;&gt;
+&lt;&lt;set _name to _nam.name&gt;&gt;
+
+&lt;&lt;if _nam.found is 1 or _nam.hidden is 1&gt;&gt;
+&lt;&lt;if _i is $player.loc_sub or _nam.locked is 1&gt;&gt;
+&lt;div class=&quot;location grey&quot;&gt;
+[img[$imgpre + &quot;/Locations/&quot; + $player.loc_main + &quot;/&quot; + _i + &quot;.jpg&quot;]]
+				&lt;div class=&quot;location-name&quot;&gt;&lt;&lt;=_name&gt;&gt;&lt;/div&gt;
+			&lt;/div&gt;
+&lt;&lt;else&gt;&gt;
+&lt;div class=&quot;location&quot;&gt;
+&lt;&lt;set _linke to $player.loc_main + &quot;_&quot; + _i&gt;&gt;
+&lt;a @data-passage=&quot;_linke&quot;&gt;
+[img[_name|$imgpre + &quot;/Locations/&quot; + $player.loc_main + &quot;/&quot; + _i + &quot;.jpg&quot;]]&lt;div class=&quot;location-name&quot;&gt;&lt;&lt;=_name&gt;&gt;&lt;/div&gt;&lt;/a&gt;
+
+&lt;/div&gt;
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;/for&gt;&gt;
+&lt;&lt;/widget&gt;&gt;
+
+&lt;&lt;widget &quot;move&quot;&gt;&gt;
+	&lt;&lt;set
+		_type to $args[&#39;0&#39;],
+		_object to $args[&#39;1&#39;],
+		_target to $args[&#39;2&#39;],
+		_subtarg to $args[&#39;3&#39;]
+	&gt;&gt;
+&lt;&lt;if _type is &quot;c&quot;&gt;&gt;
+	&lt;&lt;set
+		$char[_object].loc_main to _target,
+		$char[_object].loc_sub to _subtarg
+	&gt;&gt;
+&lt;&lt;elseif _type is &quot;p&quot;&gt;&gt;
+	&lt;&lt;set
+		$player.loc_main to _object,
+		$player.loc_sub to _target
+	&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;/widget&gt;&gt;
+
+&lt;&lt;widget &quot;action&quot;&gt;&gt;
+	&lt;&lt;if ndef _actions&gt;&gt;
+		&lt;&lt;set _actions to []&gt;&gt;
+	&lt;&lt;set _actions.push(&quot;&lt;&lt;button \&quot;&quot; + $args[&#39;0&#39;] + &quot;\&quot; \&quot;&quot;+ $args[&#39;1&#39;] +&quot;\&quot;&gt;&gt;&quot;+$args[&#39;2&#39;]+&quot;&lt;&lt;/button&gt;&gt;&quot;)&gt;&gt;
+	&lt;&lt;else&gt;&gt;
+	&lt;&lt;set _actions.push(&quot;&lt;&lt;button \&quot;&quot; + $args[&#39;0&#39;] + &quot;\&quot; \&quot;&quot;+ $args[&#39;1&#39;] +&quot;\&quot;&gt;&gt;&quot;+$args[&#39;2&#39;]+&quot;&lt;&lt;/button&gt;&gt;&quot;)&gt;&gt;
+	&lt;&lt;/if&gt;&gt;
+
+
+
 &lt;&lt;/widget&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="Locations-Init" tags="" position="1073,1" size="100,100">&lt;&lt;set $locs to Array()&gt;&gt;
 &lt;&lt;set $locs to {
 	mc_house: {
@@ -574,56 +587,58 @@ $player.loc_sub to _target
 			hidden: 0
 		}
 	}
-} &gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="Menu" tags="nobr" position="3,551" size="100,100">&lt;&lt;set _av to $imgpre + &quot;/misc/player.jpg&quot;&gt;&gt; 
-&lt;div class=&quot;w3-white w3-text-grey w3-card-4&quot;&gt; 
-&lt;div class=&quot;w3-display-container&quot;&gt; 
-&lt;img @src=&quot;_av&quot; style=&quot;width:100%&quot; alt=&quot;Avatar&quot;&gt; 
-&lt;div class=&quot;w3-display-bottomleft w3-container w3-text-black&quot;&gt; 
-&lt;h2 style=&quot;color: white; mix-blend-mode: difference;&quot;&gt;&lt;&lt;=$player.fname&gt;&gt; &lt;&lt;=$player.lname&gt;&gt;&lt;/h2&gt; 
-&lt;/div&gt; 
-&lt;/div&gt; 
-&lt;div class=&quot;w3-container&quot;&gt; 
-&lt;p&gt;&lt;i class=&quot;fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal&quot;&gt;&lt;/i&gt;&lt;&lt;=$player.title&gt;&gt;&lt;/p&gt; 
-&lt;p&gt;&lt;i class=&quot;fa fa-home fa-fw w3-margin-right w3-large w3-text-teal&quot;&gt;&lt;/i&gt;&lt;&lt;=$locs[$player.loc_main][$player.loc_sub].name&gt;&gt;&lt;/p&gt; 
-&lt;p&gt;&lt;i class=&quot;fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal&quot;&gt;&lt;/i&gt;&lt;a href=&quot;javascript:SugarCube.Engine.restart()&quot;&gt;restart&lt;/a&gt;&lt;/p&gt; 
-&lt;p&gt;&lt;i class=&quot;fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal&quot;&gt;&lt;/i&gt;&lt;a href=&quot;javascript:SugarCube.UI.saves();&quot;&gt;Saves&lt;/a&gt;&lt;/p&gt; 
-&lt;hr&gt; 
-&lt;p class=&quot;w3-large&quot;&gt;&lt;b&gt;&lt;i class=&quot;fa fa-asterisk fa-fw w3-margin-right w3-text-teal&quot;&gt;&lt;/i&gt;Skills&lt;/b&gt;&lt;/p&gt; 
-&lt;p&gt;Adobe Photoshop&lt;/p&gt; 
-&lt;div class=&quot;w3-light-grey w3-round-xlarge w3-small&quot;&gt; 
-&lt;div class=&quot;w3-container w3-center w3-round-xlarge w3-teal&quot; style=&quot;width:90%&quot;&gt;90%&lt;/div&gt; 
-&lt;/div&gt; 
-&lt;p&gt;Photography&lt;/p&gt; 
-&lt;div class=&quot;w3-light-grey w3-round-xlarge w3-small&quot;&gt; 
-&lt;div class=&quot;w3-container w3-center w3-round-xlarge w3-teal&quot; style=&quot;width:80%&quot;&gt; 
-&lt;div class=&quot;w3-center w3-text-white&quot;&gt;80%&lt;/div&gt; 
-&lt;/div&gt; 
-&lt;/div&gt; 
-&lt;p&gt;Illustrator&lt;/p&gt; 
-&lt;div class=&quot;w3-light-grey w3-round-xlarge w3-small&quot;&gt; 
-&lt;div class=&quot;w3-container w3-center w3-round-xlarge w3-teal&quot; style=&quot;width:75%&quot;&gt;75%&lt;/div&gt; 
-&lt;/div&gt; 
-&lt;p&gt;Media&lt;/p&gt; 
-&lt;div class=&quot;w3-light-grey w3-round-xlarge w3-small&quot;&gt; 
-&lt;div class=&quot;w3-container w3-center w3-round-xlarge w3-teal&quot; style=&quot;width:50%&quot;&gt;50%&lt;/div&gt; 
-&lt;/div&gt; 
-&lt;br&gt; 
-&lt;p class=&quot;w3-large w3-text-theme&quot;&gt;&lt;b&gt;&lt;i class=&quot;fa fa-globe fa-fw w3-margin-right w3-text-teal&quot;&gt;&lt;/i&gt;Languages&lt;/b&gt;&lt;/p&gt; 
-&lt;p&gt;English&lt;/p&gt; 
-&lt;div class=&quot;w3-light-grey w3-round-xlarge&quot;&gt; 
-&lt;div class=&quot;w3-round-xlarge w3-teal&quot; style=&quot;height:24px;width:100%&quot;&gt;&lt;/div&gt; 
-&lt;/div&gt; 
-&lt;p&gt;Spanish&lt;/p&gt; 
-&lt;div class=&quot;w3-light-grey w3-round-xlarge&quot;&gt; 
-&lt;div class=&quot;w3-round-xlarge w3-teal&quot; style=&quot;height:24px;width:55%&quot;&gt;&lt;/div&gt; 
-&lt;/div&gt; 
-&lt;p&gt;German&lt;/p&gt; 
-&lt;div class=&quot;w3-light-grey w3-round-xlarge&quot;&gt; 
-&lt;div class=&quot;w3-round-xlarge w3-teal&quot; style=&quot;height:24px;width:25%&quot;&gt;&lt;/div&gt; 
-&lt;/div&gt; 
-&lt;br&gt; 
-&lt;/div&gt; 
-&lt;/div&gt;&lt;br&gt;</tw-passagedata><tw-passagedata pid="9" name="Notifications" tags="" position="130,441" size="100,100">Notifications 
+} &gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="Menu" tags="nobr" position="3,551" size="100,100">&lt;&lt;set _av to $imgpre + &quot;/misc/player.jpg&quot;&gt;&gt;
+  &lt;div class=&quot;w3-white w3-text-grey w3-card-4&quot;&gt;
+    &lt;div class=&quot;w3-display-container&quot;&gt;
+  &lt;img @src=&quot;_av&quot; style=&quot;width:100%&quot; alt=&quot;Avatar&quot;&gt;
+      &lt;div class=&quot;w3-display-bottomleft w3-container w3-text-black&quot;&gt;
+        &lt;h2 style=&quot;color: white; mix-blend-mode: difference;&quot;&gt;&lt;&lt;=$player.fname&gt;&gt; &lt;&lt;=$player.lname&gt;&gt;&lt;/h2&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;w3-container&quot;&gt;
+      &lt;p&gt;&lt;i class=&quot;fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal&quot;&gt;&lt;/i&gt;&lt;&lt;=$player.title&gt;&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;i class=&quot;fa fa-home fa-fw w3-margin-right w3-large w3-text-teal&quot;&gt;&lt;/i&gt;&lt;&lt;=$locs[$player.loc_main][$player.loc_sub].name&gt;&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;i class=&quot;fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal&quot;&gt;&lt;/i&gt;&lt;a href=&quot;javascript:SugarCube.Engine.restart()&quot;&gt;restart&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;i class=&quot;fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal&quot;&gt;&lt;/i&gt;&lt;a href=&quot;javascript:SugarCube.UI.saves();&quot;&gt;Saves&lt;/a&gt;&lt;/p&gt;
+      &lt;hr&gt;
+
+      &lt;p class=&quot;w3-large&quot;&gt;&lt;b&gt;&lt;i class=&quot;fa fa-asterisk fa-fw w3-margin-right w3-text-teal&quot;&gt;&lt;/i&gt;Skills&lt;/b&gt;&lt;/p&gt;
+      &lt;p&gt;Adobe Photoshop&lt;/p&gt;
+      &lt;div class=&quot;w3-light-grey w3-round-xlarge w3-small&quot;&gt;
+        &lt;div class=&quot;w3-container w3-center w3-round-xlarge w3-teal&quot; style=&quot;width:90%&quot;&gt;90%&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;p&gt;Photography&lt;/p&gt;
+      &lt;div class=&quot;w3-light-grey w3-round-xlarge w3-small&quot;&gt;
+        &lt;div class=&quot;w3-container w3-center w3-round-xlarge w3-teal&quot; style=&quot;width:80%&quot;&gt;
+          &lt;div class=&quot;w3-center w3-text-white&quot;&gt;80%&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;p&gt;Illustrator&lt;/p&gt;
+      &lt;div class=&quot;w3-light-grey w3-round-xlarge w3-small&quot;&gt;
+        &lt;div class=&quot;w3-container w3-center w3-round-xlarge w3-teal&quot; style=&quot;width:75%&quot;&gt;75%&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;p&gt;Media&lt;/p&gt;
+      &lt;div class=&quot;w3-light-grey w3-round-xlarge w3-small&quot;&gt;
+        &lt;div class=&quot;w3-container w3-center w3-round-xlarge w3-teal&quot; style=&quot;width:50%&quot;&gt;50%&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;br&gt;
+
+      &lt;p class=&quot;w3-large w3-text-theme&quot;&gt;&lt;b&gt;&lt;i class=&quot;fa fa-globe fa-fw w3-margin-right w3-text-teal&quot;&gt;&lt;/i&gt;Languages&lt;/b&gt;&lt;/p&gt;
+      &lt;p&gt;English&lt;/p&gt;
+      &lt;div class=&quot;w3-light-grey w3-round-xlarge&quot;&gt;
+        &lt;div class=&quot;w3-round-xlarge w3-teal&quot; style=&quot;height:24px;width:100%&quot;&gt;&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;p&gt;Spanish&lt;/p&gt;
+      &lt;div class=&quot;w3-light-grey w3-round-xlarge&quot;&gt;
+        &lt;div class=&quot;w3-round-xlarge w3-teal&quot; style=&quot;height:24px;width:55%&quot;&gt;&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;p&gt;German&lt;/p&gt;
+      &lt;div class=&quot;w3-light-grey w3-round-xlarge&quot;&gt;
+        &lt;div class=&quot;w3-round-xlarge w3-teal&quot; style=&quot;height:24px;width:25%&quot;&gt;&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;br&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;&lt;br&gt;</tw-passagedata><tw-passagedata pid="9" name="Notifications" tags="" position="130,441" size="100,100">Notifications 
 /*$(document).on(&#39;:passageinit&#39;, function (ev) { 
 var sv = State.variables; 
 }); 
@@ -683,48 +698,53 @@ $company to &quot;TestCo&quot;
 &lt;&lt;include &quot;Player-Init&quot;&gt;&gt;
 &lt;&lt;include &quot;Character-Init&quot;&gt;&gt;
 &lt;&lt;include &quot;Locations-Init&quot;&gt;&gt;
-&lt;&lt;include &quot;Time-Init&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="19" name="StoryInterface" tags="" position="0,668" size="100,100">&lt;DOCTYPE html&gt; 
-&lt;html&gt; 
-&lt;title&gt;W3.CSS Template&lt;/title&gt; 
-&lt;meta charset=&quot;UTF-8&quot;&gt; 
-&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt; 
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://www.w3schools.com/w3css/4/w3.css&quot;&gt; 
-&lt;link rel=&#39;stylesheet&#39; href=&#39;https://fonts.googleapis.com/css?family=Roboto&#39;&gt; 
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot;&gt; 
-&lt;style&gt; 
-html,body,h1,h2,h3,h4,h5,h6 {font-family: &quot;Roboto&quot;, sans-serif} 
-&lt;/style&gt; 
-&lt;body class=&quot;w3-light-grey&quot;&gt; 
-&lt;-- Page Container --&gt; 
-&lt;div class=&quot;w3-content w3-margin-top&quot; style=&quot;max-width:1400px;&quot;&gt; 
-&lt;-- The Grid --&gt; 
-&lt;div class=&quot;w3-row-padding&quot;&gt; 
- 
-&lt;-- Left Column --&gt; 
-&lt;div id=&quot;menu&quot; data-passage=&quot;Menu&quot; class=&quot;w3-third&quot;&gt; 
- 
-&lt;-- End Left Column --&gt; 
-&lt;/div&gt; 
-&lt;div id=&quot;actions&quot; data-passage=&quot;Actions&quot; class=&quot;w3-third&quot;&gt; 
-&lt;/div&gt; 
-&lt;-- Right Column --&gt; 
-&lt;div class=&quot;w3-twothird&quot;&gt; 
- 
-&lt;div id=&quot;passages&quot; class=&quot;w3-container w3-card w3-white w3-margin-bottom&quot;&gt; 
- 
-&lt;/div&gt; 
-&lt;-- End Right Column --&gt; 
- 
-&lt;/div&gt; 
-&lt;-- End Grid --&gt; 
-&lt;/div&gt; 
- 
-&lt;-- End Page Container --&gt; 
-&lt;/div&gt; 
-&lt;footer class=&quot;w3-container w3-teal w3-center w3-margin-top&quot;&gt; 
- 
-&lt;/footer&gt; 
-&lt;/body&gt; 
+&lt;&lt;include &quot;Time-Init&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="19" name="StoryInterface" tags="" position="0,668" size="100,100">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;title&gt;W3.CSS Template&lt;/title&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://www.w3schools.com/w3css/4/w3.css&quot;&gt;
+&lt;link rel=&#39;stylesheet&#39; href=&#39;https://fonts.googleapis.com/css?family=Roboto&#39;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot;&gt;
+&lt;style&gt;
+html,body,h1,h2,h3,h4,h5,h6 {font-family: &quot;Roboto&quot;, sans-serif}
+&lt;/style&gt;
+&lt;body class=&quot;w3-light-grey&quot;&gt;
+
+&lt;!-- Page Container --&gt;
+&lt;div class=&quot;w3-content w3-margin-top&quot; style=&quot;max-width:1400px;&quot;&gt;
+
+  &lt;!-- The Grid --&gt;
+  &lt;div class=&quot;w3-row-padding&quot;&gt;
+
+    &lt;!-- Left Column --&gt;
+    &lt;div id=&quot;menu&quot; data-passage=&quot;Menu&quot; class=&quot;w3-third&quot;&gt;
+
+    &lt;!-- End Left Column --&gt;
+    &lt;/div&gt;
+      &lt;div id=&quot;actions&quot; data-passage=&quot;Actions&quot; class=&quot;w3-third&quot;&gt;
+	&lt;/div&gt;
+    &lt;!-- Right Column --&gt;
+    &lt;div class=&quot;w3-twothird&quot;&gt;
+
+      &lt;div id=&quot;passages&quot; class=&quot;w3-container w3-card w3-white w3-margin-bottom&quot;&gt;
+
+      &lt;/div&gt;
+    &lt;!-- End Right Column --&gt;
+
+	&lt;/div&gt;
+
+  &lt;!-- End Grid --&gt;
+  &lt;/div&gt;
+
+  &lt;!-- End Page Container --&gt;
+&lt;/div&gt;
+
+&lt;footer class=&quot;w3-container w3-teal w3-center w3-margin-top&quot;&gt;
+
+&lt;/footer&gt;
+
+&lt;/body&gt;
 &lt;/html&gt;</tw-passagedata><tw-passagedata pid="20" name="StoryMenu" tags="" position="16,294" size="100,100">[[New story link|Start]]</tw-passagedata><tw-passagedata pid="21" name="StorySubtitle" tags="" position="514,3" size="100,100">Version: 0.0.1</tw-passagedata><tw-passagedata pid="22" name="Text Widgets" tags="widget" position="1453,70" size="100,100">&lt;&lt;widget &quot;dialog&quot;&gt;&gt; 
 &lt;&lt;portrait $args[0]&gt;&gt; 
 &lt;&lt;if $args[&#39;0&#39;] == &quot;author&quot;&gt;&gt; 

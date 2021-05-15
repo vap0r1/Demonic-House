@@ -1,4 +1,12 @@
-:: demon-talk-1 {"position":"1204,447.5","size":"100,100"} 
-<<act "Having made your decision you reach out and touch the seal">> 
-<<narration "Finally done you see some kind of ritualistic magic circle that is slightly glowing in a red light. The top most icon is glowing brighter and you feel the sudden urge to touch it.">> 
-<<dialog "demo" "Touch.... Th....e.... Seal....">> 
+:: Demon-talk-1 {"position":"1204,447.5","size":"100,100"}
+
+<<dialog "player" "Damn.... That dream was interesting... I've never thought about my $chars.arid.title like that before, but I kind of like it.">>
+
+
+<<narration "Getting out of bed you notice the seal glowing slightly and having made up your mind to see what this Demon has to offer you place your hand on the seal.">>
+
+<<dialog "demo" "You're finally awake. I hope you enjoyed that dream while you were out.">>
+
+<<dialog "player" "You caused that?">>
+
+<<dialog "demo" "Yes, I wanted to give you a taste of what I can offer you.">>

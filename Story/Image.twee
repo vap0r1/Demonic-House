@@ -1,44 +1,48 @@
-:: Image Widgets [widget] {"position":"1595,63","size":"100,100"} 
-<<widget "portrait">> 
-<<set _i to $args['0']>> 
-<<if _i == "player">> 
-<<set _name to $player.name>> 
-<<set _imagepath to $imgpre + '/thumbs/avatar_male.jpg'>> 
-<<elseif _i == "author">> 
-<<set _name to "Mysterious Figure">> 
-<<set _imagepath to $imgpre + '/thumbs/smith.jpg'>> 
-<<else>> 
-<<set _name to $char[_i].name>> 
-<<set _imagepath to $imgpre + '/thumbs/' + _i +'.jpg'>> 
-<</if>> 
-<<set $portt to _imagepath>> 
-<</widget>> 
-<<widget "bimg">> 
-<<set 
-_type to $args['0']; 
-_item to $args['1']; 
-_target to $args['2']; 
->> 
- 
-<<if _type == "l">> 
-<<set    
-_imgPath to $imgpre + "/" + "/Locations/" + _item, 
-_img to _imgPath + "/" + _target; 
->> 
-<<elseif _type == "c">> 
-<<set 
-_loc to $char[$args['1']], 
-_imgPath to $imgpre + "/" + _loc.imgPath, 
-_img to _imgPath + "/" + _target; 
->> 
- 
-<<elseif _type == "o">> 
-<<set 
-_imgPath to $imgpre + "/misc", 
-_img to _imgPath + "/" + $args['1']; 
->> 
-<</if>> 
-<div id="bimage" class="bimage"> 
-[img[test|_img]] 
-</div> 
-<</widget>> 
+:: Image Widgets [widget] {"position":"1595,63","size":"100,100"}
+<<widget "portrait">>
+<<set _i to $args['0']>>
+<<if _i == "player">>
+<<set _name to $player.name>>
+<<set _imagepath to $imgpre + '/thumbs/avatar_male.jpg'>>
+<<elseif _i == "author">>
+<<set _name to "Mysterious Figure">>
+<<set _imagepath to $imgpre + '/thumbs/smith.jpg'>>
+<<else>>
+<<set _name to $char[_i].name>>
+<<set _imagepath to $imgpre + '/thumbs/' + _i +'.jpg'>>
+<</if>>
+<<set $portt to _imagepath>>
+<</widget>>
+
+
+
+<<widget "bimg">>
+	  <<set
+	  		_type to $args['0'];
+			_item to $args['1'];
+			_target to $args['2'];
+	  >>
+
+	  <<if _type == "l">>
+		  <<set
+				_imgPath to $imgpre + "/" + "/Locations/" + _item,
+				_img to _imgPath + "/" + _target;
+		  >>
+	 <<elseif _type == "c">>
+	  		<<set
+				_loc to $char[$args['1']],
+				_imgPath to $imgpre + "/" + _loc.imgPath,
+				_img to _imgPath + "/" + _target;
+			>>
+
+
+  	 <<elseif _type == "o">>
+	  		<<set
+				_imgPath to $imgpre + "/misc",
+				_img to _imgPath + "/" + $args['1'];
+			>>
+	  <</if>>
+	  <div id="bimage" class="bimage">
+	   [img[test|_img]]
+	   </div>
+<</widget>>

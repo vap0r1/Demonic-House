@@ -1,6 +1,6 @@
 :: Demon-talk-1 {"position":"1204,447.5","size":"100,100"}
 
-<<dialog "player" "Damn.... That dream was interesting... I've never thought about my $chars.arid.title like that before, but I kind of like it.">>
+<<dialog "player" "Damn.... That dream was interesting... I've never thought about my $char.arid.title like that before, but I kind of like it.">>
 
 
 <<narration "Getting out of bed you notice the seal glowing slightly and having made up your mind to see what this Demon has to offer you place your hand on the seal.">>

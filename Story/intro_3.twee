@@ -9,7 +9,7 @@
 
 <<dialog "player" "$char.arid.fname show me your ass.">>
 
- <<narration "Your $char.arid.title's eyes seem to become unfocused and she relaxes slightly."">>
+ <<narration "Your $char.arid.title's eyes seem to become unfocused and she relaxes slightly.">>
 
 <<bimg "c" "arid" "intro-3.jpeg">>
 

@@ -98,7 +98,175 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 		<div id="init-lacking">Your browser lacks required capabilities. Please upgrade it or switch to another to continue.</div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<!-- UUID://BFBA3BA3-49E5-4C33-BB59-38745BE85547// --><tw-storydata name="Demonic House" startnode="15" creator="Tweego" creator-version="2.1.1" ifid="BFBA3BA3-49E5-4C33-BB59-38745BE85547" zoom="1" format="SugarCube" format-version="2.35.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">.w3-margin-top { 
+	<!-- UUID://BFBA3BA3-49E5-4C33-BB59-38745BE85547// --><tw-storydata name="Demonic House" startnode="15" creator="Tweego" creator-version="2.1.1" ifid="BFBA3BA3-49E5-4C33-BB59-38745BE85547" zoom="1" format="SugarCube" format-version="2.35.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* twine-user-stylesheet #1: "DH.css" */
+.w3-margin-top {
+	max-width: -webkit-fill-available !important;
+  max-width: -moz-available !important;
+}
+
+.w3-margin-top {
+	width: initial;
+}
+html {
+	overflow-x: initial !important;
+}
+
+.w3-third {
+	width: 20% !important;
+}
+
+.w3-display-container {
+	height: -dwebkit-fill-available !important;
+}
+
+#actions {
+	float: right;
+	width: 20%
+}
+
+.w3-twothird {
+	width: 60% !important;
+}
+
+.pro {
+	position: relative;
+	text-align: center;
+}
+
+.pro img {
+	display: block;
+	margin: auto;
+	padding: 1px;
+	height: 84px;
+	width: 84px;
+	float: left;
+	margin: 0px 10px 0px 0px;
+	border: 2px solid white;
+	border-radius: 5px;
+}
+
+.dialog-1 {
+	padding: 5px;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	position: absolute;
+	transform: translate(-10%, -100%);
+}
+
+div.men {
+	color: white;
+	min-height: 105px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: left;
+	background-color: #222222;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	border: 2px solid white;
+	border-radius: 5px;
+	padding: 8px 8px 8px 8px;
+	box-shadow: 5px 5px 3px Black;
+}
+
+div.men2 {
+	color: white;
+	text-align: left;
+	margin-top: 20px;
+  	margin-bottom: 20px;
+	background-color: #222222;
+	border: 2px solid white;
+	border-radius: 5px;
+	padding: 8px 8px 8px 8px;
+	box-shadow: 5px 5px 3px Black;
+}
+
+@-webkit-keyframes glow {
+	from {
+		box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #fff, 0 0 5px #fff, 0 0 6px #fff, 0 0 7px #fff;
+	}
+	to {
+		box-shadow: 0 0 3px slategrey, 0 0 3px slategrey, 0 0 4px slategrey, 0 0 5px slategrey, 0 0 6px slategrey, 0 0 7px slategrey, 0 0 8px slategrey;
+	}
+}
+
+.bimage img {
+	max-height: 600px;
+    max-width: -webkit-fill-available;
+  	max-width: -moz-available;
+	margin-top: 20px;
+	margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	position: relative;
+	border-radius: 25px;
+	border: 2px solid lightblue;
+}
+
+#actions {
+	position: sticky;
+	top: 16px;
+}
+
+#menu {
+	position: sticky;
+	top: 16px;
+}
+
+.locations {
+	margin-left: 15px;
+	display: inline-flex;
+	flex-wrap: wrap;
+}
+
+.location {
+	max-width: 68px;
+	width: 68px;
+	/* position: relative; */
+	position: relative;
+	margin: 5px;
+	/* float: left; */
+}
+
+.location:hover {
+	transform: scale(1.05);
+}
+
+.grey {
+	filter: grayscale(100%);
+}
+
+.grey:hover {
+	transform: scale(1);
+}
+
+.locations img {
+	height: 68px;
+	width: 68px;
+	border-radius: 10%;
+}
+
+.location-name {
+	position: absolute;
+	bottom: 0px;
+	color: white;
+}
+
+.action-bar {
+	display: inline-block;
+    width: -webkit-fill-available;
+  	width: -moz-available;
+	margin: 5px;
+}
+
+.macro-button {
+    width: -webkit-fill-available;
+	width: -moz-available;
+  	min-width: 100px;
+	border-radius: 20px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+/* twine-user-stylesheet #2: "Story Stylesheet" */
+.w3-margin-top { 
 max-width: -webkit-fill-available important; 
 max-width: -moz-available important; 
 } 
@@ -240,11 +408,23 @@ min-width: 100px;
 border-radius: 20px; 
 margin-top: 5px; 
 margin-bottom: 5px; 
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript">Config.passages.nobr = true; 
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript">/* twine-user-script #1: "Story JavaScript" */
+Config.passages.nobr = true; 
 Config.saves.autosave = ["bookmark", "autosave"]; 
 Config.saves.id = "DemonHouse"; 
 Config.passages.descriptions = { 
 "Intro_2" : "description" 
+};
+/* twine-user-script #2: "dh.js" */
+Config.passages.nobr = true;
+
+
+
+
+Config.saves.autosave = ["bookmark", "autosave"];
+Config.saves.id = "DemonHouse";
+Config.passages.descriptions = {
+	"Intro_2" : "description"
 };</script><tw-tag name="Widget" color="purple"></tw-tag><tw-passagedata pid="1" name="Actions" tags="" position="10,439" size="100,100">&lt;div class=&quot;w3-white w3-text-grey w3-card-4&quot;&gt;
         &lt;div class=&quot;w3-display-container&quot;&gt;
 			&lt;div id=&quot;locations-title&quot;&gt;&lt;p style=&quot;color: black;text-align: center;background-color: grey;margin: unset;&quot;&gt;Locations&lt;/p&gt;&lt;/div&gt;
@@ -802,29 +982,29 @@ $time.dow++
 &lt;&lt;set $time.pod to 1&gt;&gt; 
 &lt;&lt;elseif $time.hour gte 4 and $time.hour lte 7&gt;&gt; 
 &lt;&lt;set $time.pod to 0&gt;&gt; 
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="26" name="Untitled Passage" tags="" position="335,846" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="27" name="Untitled Passage 1" tags="" position="1500,865" size="100,100">&lt;&lt;set  
-$player.loc_main to &quot;company&quot;, 
-$player.loc_sub to &quot;boss_office&quot;, 
-$locs.company.lab_main.found to 1, 
-$quest.intro.run to 1 
-&gt;&gt; 
-&lt;&lt;bimg &quot;c&quot; &quot;scar&quot; &quot;intro.jpg&quot;&gt;&gt; 
-&lt;&lt;dialog &quot;scar&quot; &quot;...... Mr. $player.lname are you paying attention?&quot;&gt;&gt; 
-&lt;&lt;narration &quot;With a start you turn to your $char.scar.relp $char.scar.display.&quot;&gt;&gt; 
-&lt;&lt;dialog &quot;player&quot; &quot;Yes $char.scar.title, I&#39;m sorry I got in late last night from studying&quot;&gt;&gt; 
-&lt;&lt;dialog &quot;scar&quot; &quot;I don&#39;t care for your excuses Mr. $player.lname. Do not let it happen again. Do you understand?&quot;&gt;&gt; 
-&lt;&lt;dialog &quot;player&quot; &quot;Yes Ma&#39;am, I swear it will never occur again.&quot;&gt;&gt; 
-&lt;&lt;dialog &quot;scar&quot; &quot;Now as I was saying... My project to create a device that allows for easier introduction of information to the subjects mind has gone well but it is regrettably far from completetion. At this time all we are able to do is send basic information to the subjects brain via the nervous system. Which is where you come into play Mr. $player.lname. I want you to work with Ms. $char.alexc.lname and our volunteer&#39;s with the goal of increasing the amount of data you can send via their nervous systems. Do you have any questions?&quot;&gt;&gt; 
-&lt;&lt;dialog &quot;player&quot; &quot;No Ma&#39;am, I&#39;m excited to get to work and help out.&quot;&gt;&gt; 
-&lt;&lt;dialog &quot;scar&quot; &quot;We shall see if you will be of help Mr. $player.lname. Now get to the lab, Ms. $char.alexc.lname is waiting for you.&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="28" name="Untitled Passage 2" tags="" position="1164,864.5" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="29" name="company_lab_hallway" tags="" position="702,211" size="100,100">&lt;&lt;locations&gt;&gt;</tw-passagedata><tw-passagedata pid="30" name="company_lab_main" tags="" position="833,805" size="100,100">&lt;&lt;set  
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="26" name="Untitled Passage 1" tags="" position="1500,865" size="100,100">&lt;&lt;set
+$player.loc_main to &quot;company&quot;,
+$player.loc_sub to &quot;boss_office&quot;,
+$locs.company.lab_main.found to 1,
+$quest.intro.run to 1
+&gt;&gt;
+&lt;&lt;bimg &quot;c&quot; &quot;scar&quot; &quot;intro.jpg&quot;&gt;&gt;
+&lt;&lt;dialog &quot;scar&quot; &quot;...... Mr. $player.lname are you paying attention?&quot;&gt;&gt;
+&lt;&lt;narration &quot;With a start you turn to your $char.scar.relp $char.scar.display.&quot;&gt;&gt;
+&lt;&lt;dialog &quot;player&quot; &quot;Yes $char.scar.title, I&#39;m sorry I got in late last night from studying&quot;&gt;&gt;
+&lt;&lt;dialog &quot;scar&quot; &quot;I don&#39;t care for your excuses Mr. $player.lname. Do not let it happen again. Do you understand?&quot;&gt;&gt;
+&lt;&lt;dialog &quot;player&quot; &quot;Yes Ma&#39;am, I swear it will never occur again.&quot;&gt;&gt;
+&lt;&lt;dialog &quot;scar&quot; &quot;Now as I was saying... My project to create a device that allows for easier introduction of information to the subjects mind has gone well but it is regrettably far from completetion. At this time all we are able to do is send basic information to the subjects brain via the nervous system. Which is where you come into play Mr. $player.lname. I want you to work with Ms. $char.alexc.lname and our volunteer&#39;s with the goal of increasing the amount of data you can send via their nervous systems. Do you have any questions?&quot;&gt;&gt;
+&lt;&lt;dialog &quot;player&quot; &quot;No Ma&#39;am, I&#39;m excited to get to work and help out.&quot;&gt;&gt;
+&lt;&lt;dialog &quot;scar&quot; &quot;We shall see if you will be of help Mr. $player.lname. Now get to the lab, Ms. $char.alexc.lname is waiting for you.&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="27" name="Untitled Passage 2" tags="" position="1164,864.5" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="28" name="company_lab_hallway" tags="" position="702,211" size="100,100">&lt;&lt;locations&gt;&gt;</tw-passagedata><tw-passagedata pid="29" name="company_lab_main" tags="" position="833,805" size="100,100">&lt;&lt;set  
 $player.loc_main to &quot;company&quot;, 
 $player.loc_sub to &quot;lab_main&quot; 
 &gt;&gt; 
 &lt;&lt;if $quest.intro.run is 1&gt;&gt; 
 &lt;&lt;goto &quot;lab_intro&quot;&gt;&gt; 
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="31" name="demon-talk-1" tags="" position="1204,447.5" size="100,100">&lt;&lt;act &quot;Having made your decision you reach out and touch the seal&quot;&gt;&gt; 
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="30" name="demon-talk-1" tags="" position="1204,447.5" size="100,100">&lt;&lt;act &quot;Having made your decision you reach out and touch the seal&quot;&gt;&gt; 
 &lt;&lt;narration &quot;Finally done you see some kind of ritualistic magic circle that is slightly glowing in a red light. The top most icon is glowing brighter and you feel the sudden urge to touch it.&quot;&gt;&gt; 
-&lt;&lt;dialog &quot;demo&quot; &quot;Touch.... Th....e.... Seal....&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="32" name="home_intro" tags="" position="221,845" size="100,100">&lt;&lt;set  
+&lt;&lt;dialog &quot;demo&quot; &quot;Touch.... Th....e.... Seal....&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="31" name="home_intro" tags="" position="221,845" size="100,100">&lt;&lt;set  
 $player.loc_main = &quot;player_home&quot;,  
 $player.loc_sub = &quot;bedroom&quot;, 
 $locs.company.lab_hallway.found = 1, 
@@ -834,7 +1014,7 @@ $system.locations to 1
 &gt;&gt; 
 &lt;&lt;narration &quot;After a long day of work and dealing with your co-workers you decide to get some sleep before working on your own side project in the morning.&quot;&gt;&gt; 
 &lt;&lt;bimg &quot;o&quot; &quot;alarm.jpg&quot;&gt;&gt; 
-&lt;&lt;action &quot;Wake Up&quot; &quot;home_intro_2&quot; &quot;&lt;&lt;set $quest.intro.run is 0&gt;&gt;&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="33" name="lab_intro_4" tags="" position="0,847" size="100,100">&lt;&lt;narration &quot;As you start to make the adjustments an idea occurs to you to also change the data being sent. You quickly type up a short document with commands for $char.kyler.fname to touch herself. Almost immediately you notice a stronger reaction from $char.kyler.fname.&quot;&gt;&gt; 
+&lt;&lt;action &quot;Wake Up&quot; &quot;home_intro_2&quot; &quot;&lt;&lt;set $quest.intro.run is 0&gt;&gt;&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="32" name="lab_intro_4" tags="" position="0,847" size="100,100">&lt;&lt;narration &quot;As you start to make the adjustments an idea occurs to you to also change the data being sent. You quickly type up a short document with commands for $char.kyler.fname to touch herself. Almost immediately you notice a stronger reaction from $char.kyler.fname.&quot;&gt;&gt; 
 &lt;&lt;bimg &quot;c&quot; &quot;kyler&quot; &quot;intro6.jpg&quot;&gt;&gt; 
 &lt;&lt;dialog &quot;kyler&quot; &quot;Nooo... Why does.. Why does it feel even better now? No. I don&#39;t want to touch myself...&quot;&gt;&gt; 
 &lt;&lt;narration &quot;$char.kyler.fname stands up and seems to be struggling with the commands. So you raise the amplitude again.&quot;&gt;&gt; 
@@ -843,7 +1023,7 @@ $system.locations to 1
 &lt;&lt;bimg &quot;c&quot; &quot;kyler&quot; &quot;intro7.jpg&quot;&gt;&gt; 
 &lt;&lt;narration &quot;Realizing you have discovered an amazing new branch of \&quot;research\&quot; knowing that $char.alexc.fname would be back soon you restore the system to the original settings.&quot;&gt;&gt; 
 &lt;&lt;dialog &quot;player&quot; &quot;Alright Ms. $char.kyler.lname, I think we have enough data for today. If you will see the receptionist she will make sure to give you your pay for this session&quot;&gt;&gt; 
-&lt;&lt;action &quot;Shutdown System&quot; &quot;lab_intro_5&quot; &quot;&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="34" name="lab_intro_5" tags="" position="93,846" size="100,100">&lt;&lt;narration &quot;Before shutting down the system you record down the data from the experiment and then switch it with another sessions data. Just as you finish $char.alexc.fname walks into the room.&quot;&gt;&gt; 
+&lt;&lt;action &quot;Shutdown System&quot; &quot;lab_intro_5&quot; &quot;&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="33" name="lab_intro_5" tags="" position="93,846" size="100,100">&lt;&lt;narration &quot;Before shutting down the system you record down the data from the experiment and then switch it with another sessions data. Just as you finish $char.alexc.fname walks into the room.&quot;&gt;&gt; 
 &lt;&lt;bimg &quot;c&quot; &quot;alexc&quot; &quot;intro.jpg&quot;&gt;&gt; 
 &lt;&lt;dialog &quot;alexc&quot; &quot;What did you do? I saw $char.kyler.fname in the lobby and she did not look well. Did you fuck up?&quot;&gt;&gt; 
 &lt;&lt;dialog &quot;player&quot; &quot;No I did not fuck up. There was no change from the previous session. We will need to go back to the drawing board.&quot;&gt;&gt; 
@@ -851,12 +1031,12 @@ $system.locations to 1
 &lt;&lt;dialog &quot;player&quot; &quot;Will do.&quot;&gt;&gt; 
 &lt;&lt;act &quot;$char.alexc.fname leaves.&quot;&gt;&gt; 
 &lt;&lt;narration &quot;After a long day of work and dealing with your co-workers you decide to get some sleep before working on your own side project in the morning.&quot;&gt;&gt; 
-&lt;&lt;action &quot;Go Home&quot; &quot;home_intro&quot; &quot;&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="35" name="mc_house-mc_bedroom" tags="" position="901,400" size="100,100">&lt;&lt;set $player.loc to &quot;Home - Your Bedroom&quot;&gt;&gt; 
+&lt;&lt;action &quot;Go Home&quot; &quot;home_intro&quot; &quot;&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="34" name="mc_house-mc_bedroom" tags="" position="901,400" size="100,100">&lt;&lt;set $player.loc to &quot;Home - Your Bedroom&quot;&gt;&gt; 
 &lt;&lt;bimg &quot;l&quot; &quot;mc_house&quot; &quot;mc_bedroom-3.jpg&quot;&gt;&gt; 
 &lt;&lt;if $quest.intro.release == 2&gt;&gt; 
 &lt;&lt;action &quot;Sleep&quot; &quot;Sleep&quot; &quot;&quot;&gt;&gt; 
 &lt;&lt;action &quot;Talk to Demon&quot; &quot;Demon-talk-1&quot; &quot;&lt;&lt;set $quest.intro.release to 3&gt;&gt;&quot;&gt;&gt; 
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="36" name="old location widget" tags="" position="1733,45" size="100,100">&lt;&lt;widget &quot;locations&quot;&gt;&gt; 
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="35" name="old location widget" tags="" position="1733,45" size="100,100">&lt;&lt;widget &quot;locations&quot;&gt;&gt; 
 &lt;&lt;for _i, _name range $locs[$player.loc_main]&gt;&gt; 
 &lt;&lt;if _i is $player.loc_sub&gt;&gt; 
 &lt;div class=&quot;location grey&quot;&gt; 
@@ -870,7 +1050,7 @@ $system.locations to 1
 &lt;/div&gt; 
 &lt;&lt;/if&gt;&gt; 
 &lt;&lt;/for&gt;&gt; 
-&lt;&lt;/widget&gt;&gt;</tw-passagedata><tw-passagedata pid="37" name="template" tags="" position="1817,196" size="100,100">&lt;div class=&quot;w3-white w3-text-grey w3-card-4&quot;&gt; 
+&lt;&lt;/widget&gt;&gt;</tw-passagedata><tw-passagedata pid="36" name="template" tags="" position="1817,196" size="100,100">&lt;div class=&quot;w3-white w3-text-grey w3-card-4&quot;&gt; 
 &lt;div class=&quot;w3-display-container&quot;&gt; 
 &lt;img src=&quot;https://www.w3schools.com/w3images/avatar_hat.jpg&quot; style=&quot;width:100%&quot; alt=&quot;Avatar&quot;&gt; 
 &lt;div class=&quot;w3-display-bottomleft w3-container w3-text-black&quot;&gt; 

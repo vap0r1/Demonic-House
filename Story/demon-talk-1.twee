@@ -10,3 +10,24 @@
 <<dialog "player" "You caused that?">>
 
 <<dialog "demo" "Yes, I wanted to give you a taste of what I can offer you.">>
+
+<<dialog "player" "Alright, what do I need to do?">>
+
+<<dialog "demo" "Currently you've only removed one part of the seal so my powers are still very weak. To begin I will grant you an ability to corrupt those you meet. As you conquer women you will both release sexual energy. Because my powers are so weak and the seal is still mostly intact I will only be able to absorb the energy released within this room. You will now be able to store this energy and use it to strengthen yourself and help remove the seal that binds me, further increasing my abilities and in turn I will increase yours. Now steady yourself because this WILL hurt."
+
+<<dialog "player" "Wait what will hur...">>
+<<narration "You feel an energy invade your body and with it comes PAIN. ">>
+
+<<act "You begin screaming as the energy enters your body">>
+
+<<narration "When you come back to your senses you see your $char.arid.title kneeling on your bed looking at you.">>
+
+<<bimg "c" "arid" "intro-2.jpg">>
+
+<<dialog "arid" "$player.fname why are you screaming like a girl? Did they finally cancel my little pony?">>
+
+
+<<dialog "demo" "//this is a good chance to test out the new power I have gifted you. Becareful though as you can't push too hard or it will break and she will know you have done something to her.">>
+
+
+<<action "''Voice'' $chars.arid.fname" "intro_3" "<<set $quest.intro.release to 5>>">>

@@ -1011,7 +1011,28 @@ $player.loc_sub to &quot;lab_main&quot;
 
 &lt;&lt;dialog &quot;player&quot; &quot;You caused that?&quot;&gt;&gt;
 
-&lt;&lt;dialog &quot;demo&quot; &quot;Yes, I wanted to give you a taste of what I can offer you.&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="31" name="home_intro" tags="" position="221,845" size="100,100">&lt;&lt;set  
+&lt;&lt;dialog &quot;demo&quot; &quot;Yes, I wanted to give you a taste of what I can offer you.&quot;&gt;&gt;
+
+&lt;&lt;dialog &quot;player&quot; &quot;Alright, what do I need to do?&quot;&gt;&gt;
+
+&lt;&lt;dialog &quot;demo&quot; &quot;Currently you&#39;ve only removed one part of the seal so my powers are still very weak. To begin I will grant you an ability to corrupt those you meet. As you conquer women you will both release sexual energy. Because my powers are so weak and the seal is still mostly intact I will only be able to absorb the energy released within this room. You will now be able to store this energy and use it to strengthen yourself and help remove the seal that binds me, further increasing my abilities and in turn I will increase yours. Now steady yourself because this WILL hurt.&quot;
+
+&lt;&lt;dialog &quot;player&quot; &quot;Wait what will hur...&quot;&gt;&gt;
+&lt;&lt;narration &quot;You feel an energy invade your body and with it comes PAIN. &quot;&gt;&gt;
+
+&lt;&lt;act &quot;You begin screaming as the energy enters your body&quot;&gt;&gt;
+
+&lt;&lt;narration &quot;When you come back to your senses you see your $char.arid.title kneeling on your bed looking at you.&quot;&gt;&gt;
+
+&lt;&lt;bimg &quot;c&quot; &quot;arid&quot; &quot;intro-2.jpg&quot;&gt;&gt;
+
+&lt;&lt;dialog &quot;arid&quot; &quot;$player.fname why are you screaming like a girl? Did they finally cancel my little pony?&quot;&gt;&gt;
+
+
+&lt;&lt;dialog &quot;demo&quot; &quot;//this is a good chance to test out the new power I have gifted you. Becareful though as you can&#39;t push too hard or it will break and she will know you have done something to her.&quot;&gt;&gt;
+
+
+&lt;&lt;action &quot;&#39;&#39;Voice&#39;&#39; $chars.arid.fname&quot; &quot;intro_3&quot; &quot;&lt;&lt;set $quest.intro.release to 5&gt;&gt;&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="31" name="home_intro" tags="" position="221,845" size="100,100">&lt;&lt;set  
 $player.loc_main = &quot;player_home&quot;,  
 $player.loc_sub = &quot;bedroom&quot;, 
 $locs.company.lab_hallway.found = 1, 
@@ -1021,7 +1042,33 @@ $system.locations to 1
 &gt;&gt; 
 &lt;&lt;narration &quot;After a long day of work and dealing with your co-workers you decide to get some sleep before working on your own side project in the morning.&quot;&gt;&gt; 
 &lt;&lt;bimg &quot;o&quot; &quot;alarm.jpg&quot;&gt;&gt; 
-&lt;&lt;action &quot;Wake Up&quot; &quot;home_intro_2&quot; &quot;&lt;&lt;set $quest.intro.run is 0&gt;&gt;&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="32" name="lab_intro_4" tags="" position="0,847" size="100,100">&lt;&lt;narration &quot;As you start to make the adjustments an idea occurs to you to also change the data being sent. You quickly type up a short document with commands for $char.kyler.fname to touch herself. Almost immediately you notice a stronger reaction from $char.kyler.fname.&quot;&gt;&gt; 
+&lt;&lt;action &quot;Wake Up&quot; &quot;home_intro_2&quot; &quot;&lt;&lt;set $quest.intro.run is 0&gt;&gt;&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="32" name="intro_3" tags="" position="225,475" size="100,100">&lt;&lt;narration &quot;Trying to gather your focus you look at your $chars.arid.title and focus on your new ability &#39;&#39;Voice&#39;&#39;.&quot;&gt;&gt;
+
+
+&lt;&lt;dialog &quot;demo&quot; &quot;Yes, exactly like that. Now try to guide her to do your bidding. But again becareful not to push too hard too fast.&quot;&gt;&gt;
+
+&lt;&lt;narration &quot;With some trepidation you test your powers&quot;&gt;&gt;
+
+&lt;&lt;dialog &quot;player&quot; &quot;$chars.arid.fname show me your ass.&quot;&gt;&gt;
+
+ &lt;&lt;narration &quot;Your $chars.arid.title&#39;s eyes seem to become unfocused and she relaxes slightly.&quot;&quot;&gt;&gt;
+
+&lt;&lt;bimg &quot;c&quot; &quot;arid&quot; &quot;intro-3.jpg&quot;&gt;&gt;
+
+&lt;&lt;narration &quot;$chars.arid.fname gets on all fours and turns her ass in your direction. You notice as she speaks her voice has a slightly ethereal quality to it.&quot;&gt;&gt;
+
+&lt;&lt;dialog &quot;arid&quot; &quot;Like this?&quot;&gt;&gt;
+
+&lt;&lt;bimg &quot;c&quot; &quot;arid&quot; &quot;intro-5.jpg&quot;&gt;&gt;
+
+&lt;&lt;dialog &quot;arid&quot; &quot;Or do you prefer me sitting up?&quot;&gt;&gt;
+
+&lt;&lt;narration &quot;Swallowing back your drool it takes you a moment to respond&quot;&gt;&gt;
+
+&lt;&lt;dialog &quot;player&quot; &quot;That&#39;s perfect $chars.arid.fname.&quot;&gt;&gt;
+
+&lt;&lt;action &quot;$chars.arid.fname &#39;&#39;Remove your bra&#39;&#39;&quot; &quot;intro_4&quot; &quot;&lt;&lt;set $quest.intro.broke to 1&gt;&gt;&quot;&gt;&gt;
+&lt;&lt;action &quot;That&#39;s enough.&quot; &quot;intro_4&quot; &quot;&lt;&lt;set $quest.intro.broke to 2&gt;&gt;&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="33" name="lab_intro_4" tags="" position="0,847" size="100,100">&lt;&lt;narration &quot;As you start to make the adjustments an idea occurs to you to also change the data being sent. You quickly type up a short document with commands for $char.kyler.fname to touch herself. Almost immediately you notice a stronger reaction from $char.kyler.fname.&quot;&gt;&gt; 
 &lt;&lt;bimg &quot;c&quot; &quot;kyler&quot; &quot;intro6.jpg&quot;&gt;&gt; 
 &lt;&lt;dialog &quot;kyler&quot; &quot;Nooo... Why does.. Why does it feel even better now? No. I don&#39;t want to touch myself...&quot;&gt;&gt; 
 &lt;&lt;narration &quot;$char.kyler.fname stands up and seems to be struggling with the commands. So you raise the amplitude again.&quot;&gt;&gt; 
@@ -1030,7 +1077,7 @@ $system.locations to 1
 &lt;&lt;bimg &quot;c&quot; &quot;kyler&quot; &quot;intro7.jpg&quot;&gt;&gt; 
 &lt;&lt;narration &quot;Realizing you have discovered an amazing new branch of \&quot;research\&quot; knowing that $char.alexc.fname would be back soon you restore the system to the original settings.&quot;&gt;&gt; 
 &lt;&lt;dialog &quot;player&quot; &quot;Alright Ms. $char.kyler.lname, I think we have enough data for today. If you will see the receptionist she will make sure to give you your pay for this session&quot;&gt;&gt; 
-&lt;&lt;action &quot;Shutdown System&quot; &quot;lab_intro_5&quot; &quot;&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="33" name="lab_intro_5" tags="" position="93,846" size="100,100">&lt;&lt;narration &quot;Before shutting down the system you record down the data from the experiment and then switch it with another sessions data. Just as you finish $char.alexc.fname walks into the room.&quot;&gt;&gt; 
+&lt;&lt;action &quot;Shutdown System&quot; &quot;lab_intro_5&quot; &quot;&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="34" name="lab_intro_5" tags="" position="93,846" size="100,100">&lt;&lt;narration &quot;Before shutting down the system you record down the data from the experiment and then switch it with another sessions data. Just as you finish $char.alexc.fname walks into the room.&quot;&gt;&gt; 
 &lt;&lt;bimg &quot;c&quot; &quot;alexc&quot; &quot;intro.jpg&quot;&gt;&gt; 
 &lt;&lt;dialog &quot;alexc&quot; &quot;What did you do? I saw $char.kyler.fname in the lobby and she did not look well. Did you fuck up?&quot;&gt;&gt; 
 &lt;&lt;dialog &quot;player&quot; &quot;No I did not fuck up. There was no change from the previous session. We will need to go back to the drawing board.&quot;&gt;&gt; 
@@ -1038,12 +1085,12 @@ $system.locations to 1
 &lt;&lt;dialog &quot;player&quot; &quot;Will do.&quot;&gt;&gt; 
 &lt;&lt;act &quot;$char.alexc.fname leaves.&quot;&gt;&gt; 
 &lt;&lt;narration &quot;After a long day of work and dealing with your co-workers you decide to get some sleep before working on your own side project in the morning.&quot;&gt;&gt; 
-&lt;&lt;action &quot;Go Home&quot; &quot;home_intro&quot; &quot;&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="34" name="mc_house-mc_bedroom" tags="" position="901,400" size="100,100">&lt;&lt;set $player.loc to &quot;Home - Your Bedroom&quot;&gt;&gt; 
+&lt;&lt;action &quot;Go Home&quot; &quot;home_intro&quot; &quot;&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="35" name="mc_house-mc_bedroom" tags="" position="901,400" size="100,100">&lt;&lt;set $player.loc to &quot;Home - Your Bedroom&quot;&gt;&gt; 
 &lt;&lt;bimg &quot;l&quot; &quot;mc_house&quot; &quot;mc_bedroom-3.jpg&quot;&gt;&gt; 
 &lt;&lt;if $quest.intro.release == 2&gt;&gt; 
 &lt;&lt;action &quot;Sleep&quot; &quot;Sleep&quot; &quot;&quot;&gt;&gt; 
 &lt;&lt;action &quot;Talk to Demon&quot; &quot;Demon-talk-1&quot; &quot;&lt;&lt;set $quest.intro.release to 3&gt;&gt;&quot;&gt;&gt; 
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="35" name="old location widget" tags="" position="1733,45" size="100,100">&lt;&lt;widget &quot;locations&quot;&gt;&gt; 
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="36" name="old location widget" tags="" position="1733,45" size="100,100">&lt;&lt;widget &quot;locations&quot;&gt;&gt; 
 &lt;&lt;for _i, _name range $locs[$player.loc_main]&gt;&gt; 
 &lt;&lt;if _i is $player.loc_sub&gt;&gt; 
 &lt;div class=&quot;location grey&quot;&gt; 
@@ -1057,7 +1104,7 @@ $system.locations to 1
 &lt;/div&gt; 
 &lt;&lt;/if&gt;&gt; 
 &lt;&lt;/for&gt;&gt; 
-&lt;&lt;/widget&gt;&gt;</tw-passagedata><tw-passagedata pid="36" name="template" tags="" position="1817,196" size="100,100">&lt;div class=&quot;w3-white w3-text-grey w3-card-4&quot;&gt; 
+&lt;&lt;/widget&gt;&gt;</tw-passagedata><tw-passagedata pid="37" name="template" tags="" position="1817,196" size="100,100">&lt;div class=&quot;w3-white w3-text-grey w3-card-4&quot;&gt; 
 &lt;div class=&quot;w3-display-container&quot;&gt; 
 &lt;img src=&quot;https://www.w3schools.com/w3images/avatar_hat.jpg&quot; style=&quot;width:100%&quot; alt=&quot;Avatar&quot;&gt; 
 &lt;div class=&quot;w3-display-bottomleft w3-container w3-text-black&quot;&gt; 

@@ -1002,9 +1002,16 @@ $player.loc_sub to &quot;lab_main&quot;
 &gt;&gt; 
 &lt;&lt;if $quest.intro.run is 1&gt;&gt; 
 &lt;&lt;goto &quot;lab_intro&quot;&gt;&gt; 
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="30" name="demon-talk-1" tags="" position="1204,447.5" size="100,100">&lt;&lt;act &quot;Having made your decision you reach out and touch the seal&quot;&gt;&gt; 
-&lt;&lt;narration &quot;Finally done you see some kind of ritualistic magic circle that is slightly glowing in a red light. The top most icon is glowing brighter and you feel the sudden urge to touch it.&quot;&gt;&gt; 
-&lt;&lt;dialog &quot;demo&quot; &quot;Touch.... Th....e.... Seal....&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="31" name="home_intro" tags="" position="221,845" size="100,100">&lt;&lt;set  
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="30" name="Demon-talk-1" tags="" position="1204,447.5" size="100,100">&lt;&lt;dialog &quot;player&quot; &quot;Damn.... That dream was interesting... I&#39;ve never thought about my $chars.arid.title like that before, but I kind of like it.&quot;&gt;&gt;
+
+
+&lt;&lt;narration &quot;Getting out of bed you notice the seal glowing slightly and having made up your mind to see what this Demon has to offer you place your hand on the seal.&quot;&gt;&gt;
+
+&lt;&lt;dialog &quot;demo&quot; &quot;You&#39;re finally awake. I hope you enjoyed that dream while you were out.&quot;&gt;&gt;
+
+&lt;&lt;dialog &quot;player&quot; &quot;You caused that?&quot;&gt;&gt;
+
+&lt;&lt;dialog &quot;demo&quot; &quot;Yes, I wanted to give you a taste of what I can offer you.&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="31" name="home_intro" tags="" position="221,845" size="100,100">&lt;&lt;set  
 $player.loc_main = &quot;player_home&quot;,  
 $player.loc_sub = &quot;bedroom&quot;, 
 $locs.company.lab_hallway.found = 1, 

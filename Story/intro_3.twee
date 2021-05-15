@@ -1,29 +1,29 @@
 :: intro_3
 
-<<narration "Trying to gather your focus you look at your $chars.arid.title and focus on your new ability ''Voice''.">>
+<<narration "Trying to gather your focus you look at your $char.arid.title and focus on your new ability ''Voice''.">>
 
 
 <<dialog "demo" "Yes, exactly like that. Now try to guide her to do your bidding. But again becareful not to push too hard too fast.">>
 
 <<narration "With some trepidation you test your powers">>
 
-<<dialog "player" "$chars.arid.fname show me your ass.">>
+<<dialog "player" "$char.arid.fname show me your ass.">>
 
- <<narration "Your $chars.arid.title's eyes seem to become unfocused and she relaxes slightly."">>
+ <<narration "Your $char.arid.title's eyes seem to become unfocused and she relaxes slightly."">>
 
-<<bimg "c" "arid" "intro-3.jpg">>
+<<bimg "c" "arid" "intro-3.jpeg">>
 
-<<narration "$chars.arid.fname gets on all fours and turns her ass in your direction. You notice as she speaks her voice has a slightly ethereal quality to it.">>
+<<narration "$char.arid.fname gets on all fours and turns her ass in your direction. You notice as she speaks her voice has a slightly ethereal quality to it.">>
 
 <<dialog "arid" "Like this?">>
 
-<<bimg "c" "arid" "intro-5.jpg">>
+<<bimg "c" "arid" "intro-5.jpeg">>
 
 <<dialog "arid" "Or do you prefer me sitting up?">>
 
 <<narration "Swallowing back your drool it takes you a moment to respond">>
 
-<<dialog "player" "That's perfect $chars.arid.fname.">>
+<<dialog "player" "That's perfect $char.arid.fname.">>
 
-<<action "$chars.arid.fname ''Remove your bra''" "intro_4" "<<set $quest.intro.broke to 1>>">>
+<<action "$char.arid.fname ''Remove your bra''" "intro_4" "<<set $quest.intro.broke to 1>>">>
 <<action "That's enough." "intro_4" "<<set $quest.intro.broke to 2>>">>

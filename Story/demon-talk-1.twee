@@ -22,7 +22,7 @@
 
 <<narration "When you come back to your senses you see your $char.arid.title kneeling on your bed looking at you.">>
 
-<<bimg "c" "arid" "intro-2.jpg">>
+<<bimg "c" "arid" "intro-2.jpeg">>
 
 <<dialog "arid" "$player.fname why are you screaming like a girl? Did they finally cancel my little pony?">>
 
@@ -30,4 +30,4 @@
 <<dialog "demo" "//this is a good chance to test out the new power I have gifted you. Becareful though as you can't push too hard or it will break and she will know you have done something to her.">>
 
 
-<<action "''Voice'' $chars.arid.fname" "intro_3" "<<set $quest.intro.release to 5>>">>
+<<action "''Voice'' $char.arid.fname" "intro_3" "<<set $quest.intro.release to 5>>">>

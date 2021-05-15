@@ -1,70 +1,70 @@
-:: Locations-Init {"position":"1073,1","size":"100,100"} 
-<<set $locs to Array()>> 
-<<set $locs to { 
-mc_house: { 
-mc_bedroom: { 
-name: "Your Bedroom", 
-found: 1, 
-locked: 0, 
-hidden: 0 
-}, 
-hallway: { 
-name: "Hallway", 
-found: 0, 
-locked: 0, 
-hidden: 0 
-}, 
-livingroom: { 
-name: "Living Room", 
-found: 0, 
-locked: 0, 
-hidden: 0 
-}, 
-office_hallway: { 
-name: "Office Hallway", 
-found: 0, 
-locked: 0, 
-hidden: 0 
-}, 
-lobby: { 
-name: "Lobby", 
-found: 0, 
-locked: 0, 
-hidden: 0 
-}, 
-city_main: { 
-name: "City", 
-found: 0, 
-hidden: 0, 
-locked: 0, 
-target: "city_main" 
-} 
-}, 
- 
-player_home: { 
-bedroom: { 
-name: "Your Bedroom", 
-found: 1, 
-locked: 0, 
-hidden: 0 
-}, 
-bathroom: { 
-name: "Bathroom", 
-found: 1, 
-locked: 0, 
-hidden: 0 
-}, 
-livingroom: { 
-name: "Living Room", 
-found: 1, 
-locked: 0, 
-hidden: 0 
-}, 
-rm_room: { 
-name: "Room Mates Room", 
-found: 1, 
-locked: 1, 
-hidden: 0 
-} 
-} 
-} >> 
+:: Locations-Init {"position":"1073,1","size":"100,100"}
+<<set $locs to Array()>>
+<<set $locs to {
+	mc_house: {
+		mc_bedroom: {
+			name: "Your Bedroom",
+			found: 1,
+			locked: 0,
+			hidden: 0
+		},
+		hallway: {
+			name: "Hallway",
+			found: 0,
+			locked: 0,
+			hidden: 0
+		},
+		livingroom: {
+			name: "Living Room",
+			found: 0,
+			locked: 0,
+			hidden: 0
+		},
+		office_hallway: {
+			name: "Office Hallway",
+			found: 0,
+			locked: 0,
+			hidden: 0
+		},
+		lobby: {
+			name: "Lobby",
+			found: 0,
+			locked: 0,
+			hidden: 0
+		},
+		city_main: {
+			name: "City",
+			found: 0,
+			hidden: 0,
+			locked: 0,
+			target: "city_main"
+		}
+	},
+
+	player_home: {
+		bedroom: {
+			name: "Your Bedroom",
+			found: 1,
+			locked: 0,
+			hidden: 0
+		},
+		bathroom: {
+			name: "Bathroom",
+			found: 1,
+			locked: 0,
+			hidden: 0
+		},
+		livingroom: {
+			name: "Living Room",
+			found: 1,
+			locked: 0,
+			hidden: 0
+		},
+		rm_room: {
+			name: "Room Mates Room",
+			found: 1,
+			locked: 1,
+			hidden: 0
+		}
+	}
+} >>

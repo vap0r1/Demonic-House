@@ -1,17 +1,20 @@
-:: StoryInit {"position":"656,1","size":"100,100"} 
-<<set  
-$imgpre to "http://127.0.0.1/dh", 
-$company to "TestCo" 
->> 
-<<set $quest to { 
-intro: [] 
-} 
->> 
-<<set $system to { 
-locations: 1 
-} 
->> 
-<<include "Player-Init">> 
-<<include "Character-Init">> 
-<<include "Locations-Init">> 
-<<include "Time-Init">> 
+:: StoryInit {"position":"656,1","size":"100,100"}
+<<set
+$imgpre to "http://127.0.0.1/dh",
+$company to "TestCo"
+>>
+
+
+<<set $quest to {
+					intro: []
+					}
+>>
+<<set $system to {
+					locations: 1
+					}
+>>
+
+<<include "Player-Init">>
+<<include "Character-Init">>
+<<include "Locations-Init">>
+<<include "Time-Init">>

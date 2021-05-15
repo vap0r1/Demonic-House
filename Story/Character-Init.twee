@@ -1,114 +1,120 @@
-:: Character-Init {"position":"946,0","size":"100,100"} 
-/*  
-trust:  
-below zero: oblivion of trust. 
-0-10: Distrust. 
-11-20: will listen. 
-21-35: basic trust. 
-36-50: trust. 
-50-74: very trusted. 
-74+: Your word is believed first. 
-rel: 
-below zero: hate. 
-0-15: dislike. 
-16-25: nobody. 
-26-35: acquaintance 
-36-50: friend. 
-51-65: close friend. 
-65-75: best friend. 
-75-90: lover. 
-91+: lover+ 
-*/ 
-<<set $char to {  
-laud: { 
-fname: "Lauren", 
-rname: "Phillips", 
-lname: "Dray", 
-title: "Mother", 
-age: "40", 
-gender: "Female", 
-type: "char", 
-occ: "Researcher", 
-display: "Mother", 
-nickname: "", 
-color: "darkred", 
-will: 15, 
-lust: 0, 
-trust: 0, 
-exhib: 0, 
-progra: 0, /*programing level*/ 
-relp: "Mother", 
-rel: 0, /*relationship level*/ 
-desc: "She is the lead neuroscience researcher at $company name and your $char.scar.relp. She has recently made a major breakthrough in neurological education.", 
-loc_main: "mc_house", 
-loc_sub: "mc_bedroom", 
-imgPath: "characters/laud" 
-}, 
-arid: { 
-fname: "Arietta", 
-rname: "Adams", 
-lname: "Dray", 
-title: "Sister", 
-age: "21", 
-gender: "Female", 
-type: "char", 
-occ: "Lab Assistant", 
-display: "Alex", 
-nickname: "", 
-color: "lightblue", 
-will: 10, 
-lust: 0, 
-trust: 0, 
-exhib: 0, 
-progra: 0, /*programing level*/ 
-relp: "Sister", 
-rel: -10, /*relationship level*/ 
-desc: "She is $char.scar.display's assistant at $company.name. You do not know why but she has dislike you since you met.", 
-loc_main: "mc_house", 
-loc_sub: "hallway", 
-imgPath: "characters/arid" 
-}, 
- 
-demo: { 
-fname: "?????", 
-lname: "?????", 
-title: "Demon", 
-age: "??", 
-gender: "?", 
-type: "char", 
-occ: "Corruptor", 
-display: "Demon", 
-nickname: "", 
-color: "Silver", 
-will: 6, 
-lust: 0, 
-trust: 0, 
-exhib: 0, 
-progra: 0, /*programing level*/ 
-relp: "Helper", 
-rel: 10, /*relationship level*/ 
-desc: "She is our research subject at $company.name and $char.alexc.fname's roommate.", 
-imgPath: "characters/demo" 
-} 
- 
-} 
->> 
-<<set $scarlett to { 
-fname: "Scarlett", 
-lname: "Bonita", 
-title: "Professor", 
-age: "29", 
-gender: "Female", 
-occ: "Researcher", 
-display: "Prof. Bonita", 
-nickname: "", 
-color: "red", 
-will: 10, 
-lust: 0, 
-trust: 76, 
-progra: 0, /*programing level*/ 
-relp: "Boss", 
-rel: 40, /*relationship level*/ 
-desc: "She is the lead neuroscience researcher at $company name and your $scarlett.relp. She has recently made a major breakthrough in neurological education." 
-} 
->> 
+:: Character-Init {"position":"946,0","size":"100,100"}
+/*
+trust:
+	below zero: oblivion of trust.
+	0-10: Distrust.
+	11-20: will listen.
+	21-35: basic trust.
+	36-50: trust.
+	50-74: very trusted.
+	74+: Your word is believed first.
+rel:
+	below zero: hate.
+	0-15: dislike.
+	16-25: nobody.
+	26-35: acquaintance
+	36-50: friend.
+	51-65: close friend.
+	65-75: best friend.
+	75-90: lover.
+	91+: lover+
+
+*/
+<<set $char to {
+
+				laud: {
+						fname: "Lauren",
+						rname: "Phillips",
+						lname: "Dray",
+						title: "Mother",
+						age: "40",
+						gender: "Female",
+						type: "char",
+						occ: "Researcher",
+						display: "Mother",
+						nickname: "",
+						color: "darkred",
+						will: 15,
+						lust: 0,
+						trust: 0,
+						exhib: 0,
+						progra: 0, /*programing level*/
+						relp: "Mother",
+						rel: 0, /*relationship level*/
+						desc: "She is the lead neuroscience researcher at $company name and your $char.scar.relp. She has recently made a major breakthrough in neurological education.",
+						loc_main: "mc_house",
+						loc_sub: "mc_bedroom",
+						imgPath: "characters/laud"
+					},
+		arid: {
+						fname: "Arietta",
+						rname: "Adams",
+						lname: "Dray",
+						title: "Sister",
+						age: "21",
+						gender: "Female",
+						type: "char",
+						occ: "Lab Assistant",
+						display: "Alex",
+						nickname: "",
+						color: "lightblue",
+						will: 10,
+						lust: 0,
+						trust: 0,
+						exhib: 0,
+						progra: 0, /*programing level*/
+						relp: "Sister",
+						rel: -10, /*relationship level*/
+						desc: "She is $char.scar.display's assistant at $company.name. You do not know why but she has dislike you since you met.",
+						loc_main: "mc_house",
+						loc_sub: "hallway",
+
+						imgPath: "characters/arid"
+					},
+
+					demo: {
+						fname: "?????",
+						lname: "?????",
+						title: "Demon",
+						age: "??",
+						gender: "?",
+						type: "char",
+						occ: "Corruptor",
+						display: "Demon",
+						nickname: "",
+						color: "Silver",
+						will: 6,
+						lust: 0,
+						trust: 0,
+						exhib: 0,
+						progra: 0, /*programing level*/
+						relp: "Helper",
+						rel: 10, /*relationship level*/
+						desc: "She is our research subject at $company.name and $char.alexc.fname's roommate.",
+						imgPath: "characters/demo"
+					}
+
+				}
+>>
+
+<<set $scarlett to {
+						fname: "Scarlett",
+						lname: "Bonita",
+						title: "Professor",
+						age: "29",
+						gender: "Female",
+						occ: "Researcher",
+						display: "Prof. Bonita",
+						nickname: "",
+						color: "red",
+						will: 10,
+						lust: 0,
+						trust: 76,
+						progra: 0, /*programing level*/
+						relp: "Boss",
+						rel: 40, /*relationship level*/
+						desc: "She is the lead neuroscience researcher at $company name and your $scarlett.relp. She has recently made a major breakthrough in neurological education."
+					}
+
+
+>>

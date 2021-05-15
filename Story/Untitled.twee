@@ -1,20 +1,18 @@
-:: Untitled Passage {"position":"335,846","size":"100,100"} 
-Double-click this passage to edit it. 
 :: Untitled Passage 1 {"position":"1500,865","size":"100,100"} 
-<<set  
-$player.loc_main to "company", 
-$player.loc_sub to "boss_office", 
-$locs.company.lab_main.found to 1, 
-$quest.intro.run to 1 
->> 
-<<bimg "c" "scar" "intro.jpg">> 
-<<dialog "scar" "...... Mr. $player.lname are you paying attention?">> 
-<<narration "With a start you turn to your $char.scar.relp $char.scar.display.">> 
-<<dialog "player" "Yes $char.scar.title, I'm sorry I got in late last night from studying">> 
-<<dialog "scar" "I don't care for your excuses Mr. $player.lname. Do not let it happen again. Do you understand?">> 
-<<dialog "player" "Yes Ma'am, I swear it will never occur again.">> 
-<<dialog "scar" "Now as I was saying... My project to create a device that allows for easier introduction of information to the subjects mind has gone well but it is regrettably far from completetion. At this time all we are able to do is send basic information to the subjects brain via the nervous system. Which is where you come into play Mr. $player.lname. I want you to work with Ms. $char.alexc.lname and our volunteer's with the goal of increasing the amount of data you can send via their nervous systems. Do you have any questions?">> 
-<<dialog "player" "No Ma'am, I'm excited to get to work and help out.">> 
-<<dialog "scar" "We shall see if you will be of help Mr. $player.lname. Now get to the lab, Ms. $char.alexc.lname is waiting for you.">> 
-:: Untitled Passage 2 {"position":"1164,864.5","size":"100,100"} 
-Double-click this passage to edit it. 
+<<set
+$player.loc_main to "company",
+$player.loc_sub to "boss_office",
+$locs.company.lab_main.found to 1,
+$quest.intro.run to 1
+>>
+<<bimg "c" "scar" "intro.jpg">>
+<<dialog "scar" "...... Mr. $player.lname are you paying attention?">>
+<<narration "With a start you turn to your $char.scar.relp $char.scar.display.">>
+<<dialog "player" "Yes $char.scar.title, I'm sorry I got in late last night from studying">>
+<<dialog "scar" "I don't care for your excuses Mr. $player.lname. Do not let it happen again. Do you understand?">>
+<<dialog "player" "Yes Ma'am, I swear it will never occur again.">>
+<<dialog "scar" "Now as I was saying... My project to create a device that allows for easier introduction of information to the subjects mind has gone well but it is regrettably far from completetion. At this time all we are able to do is send basic information to the subjects brain via the nervous system. Which is where you come into play Mr. $player.lname. I want you to work with Ms. $char.alexc.lname and our volunteer's with the goal of increasing the amount of data you can send via their nervous systems. Do you have any questions?">>
+<<dialog "player" "No Ma'am, I'm excited to get to work and help out.">>
+<<dialog "scar" "We shall see if you will be of help Mr. $player.lname. Now get to the lab, Ms. $char.alexc.lname is waiting for you.">>
+:: Untitled Passage 2 {"position":"1164,864.5","size":"100,100"}
+Double-click this passage to edit it.

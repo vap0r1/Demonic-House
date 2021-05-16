@@ -1053,13 +1053,13 @@ $system.locations to 1
 
  &lt;&lt;narration &quot;Your $char.arid.title&#39;s eyes seem to become unfocused and she relaxes slightly.&quot;&gt;&gt;
 
-&lt;&lt;bimg &quot;c&quot; &quot;arid&quot; &quot;intro-3.jpeg&quot;&gt;&gt;
+&lt;&lt;bimg &quot;c&quot; &quot;arid&quot; &quot;intro-2a.webp&quot;&gt;&gt;
 
 &lt;&lt;narration &quot;$char.arid.fname gets on all fours and turns her ass in your direction. You notice as she speaks her voice has a slightly ethereal quality to it.&quot;&gt;&gt;
 
 &lt;&lt;dialog &quot;arid&quot; &quot;Like this?&quot;&gt;&gt;
 
-&lt;&lt;bimg &quot;c&quot; &quot;arid&quot; &quot;intro-5.jpeg&quot;&gt;&gt;
+&lt;&lt;bimg &quot;c&quot; &quot;arid&quot; &quot;intro-2b.webp&quot;&gt;&gt;
 
 &lt;&lt;dialog &quot;arid&quot; &quot;Or do you prefer me sitting up?&quot;&gt;&gt;
 
@@ -1085,11 +1085,13 @@ $system.locations to 1
 &lt;&lt;dialog &quot;player&quot; &quot;Will do.&quot;&gt;&gt; 
 &lt;&lt;act &quot;$char.alexc.fname leaves.&quot;&gt;&gt; 
 &lt;&lt;narration &quot;After a long day of work and dealing with your co-workers you decide to get some sleep before working on your own side project in the morning.&quot;&gt;&gt; 
-&lt;&lt;action &quot;Go Home&quot; &quot;home_intro&quot; &quot;&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="35" name="mc_house-mc_bedroom" tags="" position="901,400" size="100,100">&lt;&lt;set $player.loc to &quot;Home - Your Bedroom&quot;&gt;&gt; 
-&lt;&lt;bimg &quot;l&quot; &quot;mc_house&quot; &quot;mc_bedroom-3.jpg&quot;&gt;&gt; 
-&lt;&lt;if $quest.intro.release == 2&gt;&gt; 
+&lt;&lt;action &quot;Go Home&quot; &quot;home_intro&quot; &quot;&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="35" name="mc_house-mc_bedroom" tags="" position="901,400" size="100,100">&lt;&lt;set $player.loc to &quot;Home - Your Bedroom&quot;&gt;&gt;
+&lt;&lt;bimg &quot;l&quot; &quot;mc_house&quot; &quot;mc_bedroom-3.jpg&quot;&gt;&gt;
+&lt;&lt;if $quest.intro.release == 2&gt;&gt;
+
+&lt;&lt;action &quot;Talk to Demon&quot; &quot;Demon-talk-1&quot; &quot;&lt;&lt;set $quest.intro.release to 3&gt;&gt;&quot;&gt;&gt;
+&lt;&lt;else&gt;&gt;
 &lt;&lt;action &quot;Sleep&quot; &quot;Sleep&quot; &quot;&quot;&gt;&gt; 
-&lt;&lt;action &quot;Talk to Demon&quot; &quot;Demon-talk-1&quot; &quot;&lt;&lt;set $quest.intro.release to 3&gt;&gt;&quot;&gt;&gt; 
 &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="36" name="old location widget" tags="" position="1733,45" size="100,100">&lt;&lt;widget &quot;locations&quot;&gt;&gt; 
 &lt;&lt;for _i, _name range $locs[$player.loc_main]&gt;&gt; 
 &lt;&lt;if _i is $player.loc_sub&gt;&gt; 

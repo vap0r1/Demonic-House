@@ -1,9 +1,17 @@
 :: mc_house-mc_bedroom {"position":"901,400","size":"100,100"}
 <<set $player.loc to "Home - Your Bedroom">>
+
 <<bimg "l" "mc_house" "mc_bedroom-3.jpg">>
+
 <<if $quest.intro.release == 2>>
 
-<<action "Talk to Demon" "Demon-talk-1" "<<set $quest.intro.release to 3>>">>
-<<else>>
-<<action "Sleep" "Sleep" "">> 
+<<narration "You wake up feeling groggy and instinctivly reach for your phone to check the time. Noticing its noon, you're amazed at how long you've been asleep. Suddenly you remember why you ended up sleeping so long and look towards the sigil on your wall. You notice that it has a very dim, barely, noticble glow too it.">>
+
+<<action "Talk to Demon" "demon-talk-1" "<<set $quest.intro.release to 3>>">>
+
+<</if>>
+
+
+<<if $time.hour gte 20 and $time.hour lte 4>>
+	<<action "Sleep" "Sleep" "">>
 <</if>>

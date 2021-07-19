@@ -902,8 +902,6 @@ Engine.play(&quot;Save-Update&quot;, true)
 &lt;&lt;updatebar&gt;&gt;
 &lt;&lt;script&gt;&gt;
 const myNotification = window.createNotification({
-      // options here
-			positionClass: &#39;nfc-bottom-right&#39;
 });
 &lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="12" name="Player-Init" tags="" position="822,1" size="100,100">&lt;&lt;set $player to {
 					&quot;fname&quot;: &quot;Chris&quot;,
@@ -964,15 +962,7 @@ $debug to true
 &lt;&lt;include &quot;Player-Init&quot;&gt;&gt;
 &lt;&lt;include &quot;Character-Init&quot;&gt;&gt;
 &lt;&lt;include &quot;Locations-Init&quot;&gt;&gt;
-&lt;&lt;include &quot;Time-Init&quot;&gt;&gt;
-
-
-&lt;&lt;script&gt;&gt;
-const myNotification = window.createNotification({
-      // options here
-			positionClass: &#39;nfc-bottom-right&#39;
-});
-&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="19" name="StoryMenu" tags="" position="16,294" size="100,100">[[New story link|Start]]</tw-passagedata><tw-passagedata pid="20" name="StorySubtitle" tags="" position="514,3" size="100,100">Version: 0.0.1</tw-passagedata><tw-passagedata pid="21" name="Text Widgets" tags="widget" position="1453,70" size="100,100">&lt;&lt;widget &quot;dialog&quot;&gt;&gt;
+&lt;&lt;include &quot;Time-Init&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="19" name="StoryMenu" tags="" position="16,294" size="100,100">[[New story link|Start]]</tw-passagedata><tw-passagedata pid="20" name="StorySubtitle" tags="" position="514,3" size="100,100">Version: 0.0.1</tw-passagedata><tw-passagedata pid="21" name="Text Widgets" tags="widget" position="1453,70" size="100,100">&lt;&lt;widget &quot;dialog&quot;&gt;&gt;
 &lt;&lt;portrait $args[0]&gt;&gt;
 &lt;&lt;if $args[&#39;0&#39;] == &quot;author&quot;&gt;&gt;
 &lt;&lt;set

@@ -632,6 +632,37 @@ rel:
 	  &lt;div id=&quot;bimage&quot; class=&quot;bimage&quot;&gt;
 	   [img[test|_img]]
 	   &lt;/div&gt;
+&lt;&lt;/widget&gt;&gt;
+
+&lt;&lt;widget &quot;bvid&quot;&gt;&gt;
+	  &lt;&lt;set
+	  		_type to $args[&#39;0&#39;];
+			_item to $args[&#39;1&#39;];
+			_target to $args[&#39;2&#39;];
+	  &gt;&gt;
+
+	  &lt;&lt;if _type == &quot;l&quot;&gt;&gt;
+		  &lt;&lt;set
+				_imgPath to $imgpre + &quot;/&quot; + &quot;/Locations/&quot; + _item,
+				_img to _imgPath + &quot;/&quot; + _target;
+		  &gt;&gt;
+	 &lt;&lt;elseif _type == &quot;c&quot;&gt;&gt;
+	  		&lt;&lt;set
+				_loc to $char[$args[&#39;1&#39;]],
+				_imgPath to $imgpre + &quot;/&quot; + _loc.imgPath,
+				_img to _imgPath + &quot;/&quot; + _target;
+			&gt;&gt;
+
+
+  	 &lt;&lt;elseif _type == &quot;o&quot;&gt;&gt;
+	  		&lt;&lt;set
+				_imgPath to $imgpre + &quot;/misc&quot;,
+				_img to _imgPath + &quot;/&quot; + $args[&#39;1&#39;];
+			&gt;&gt;
+	  &lt;&lt;/if&gt;&gt;
+	  &lt;div id=&quot;bimage&quot; class=&quot;bimage&quot;&gt;
+		&lt;video src=&quot;_img&quot; width=&quot;640&quot; height=&quot;480&quot; autoplay&gt;&lt;/video&gt;
+	   &lt;/div&gt;
 &lt;&lt;/widget&gt;&gt;</tw-passagedata><tw-passagedata pid="4" name="Intro_1" tags="" position="343,498" size="100,100">&lt;&lt;set  
 $locs.mc_house.hallway.found to 1, 
 $locs.mc_house.hallway.locked to 1 
@@ -880,7 +911,12 @@ $quest.intro.run to 1
 &lt;&lt;move &quot;c&quot; &quot;laud&quot; &quot;blank&quot; &quot;blank&quot;&gt;&gt; 
 &lt;&lt;action &quot;Unpack Boxes&quot; &quot;Intro_1&quot; &quot;&lt;&lt;set $quest.intro.unpack to 1&gt;&gt;&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="16" name="StoryAuthor" tags="" position="228,5" size="100,100">By JulianD</tw-passagedata><tw-passagedata pid="17" name="StoryCaption" tags="" position="15,180" size="100,100">Day: $time.day&lt;br&gt;
 Time: $time.hour &lt;&lt;ampm&gt;&gt;&lt;br&gt;
-Period: &lt;&lt;= $time.period[$time.pod]&gt;&gt;</tw-passagedata><tw-passagedata pid="18" name="StoryInit" tags="" position="656,1" size="100,100">&lt;&lt;set
+Period: &lt;&lt;= $time.period[$time.pod]&gt;&gt;&lt;br&gt;
+
+
+&lt;&lt;if $debug is true&gt;&gt;
+  &lt;&lt;print passage()&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="18" name="StoryInit" tags="" position="656,1" size="100,100">&lt;&lt;set
 $imgpre to &quot;http://127.0.0.1/dh&quot;,
 $company to &quot;TestCo&quot;
 &gt;&gt;

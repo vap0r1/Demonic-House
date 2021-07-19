@@ -1171,9 +1171,12 @@ $system.locations to 1
 &lt;&lt;widget &quot;notification&quot;&gt;&gt;
 
 &lt;&lt;script&gt;&gt;
+const myNotification = window.createNotification({
+      // options here
+});
 myNotification({
   title: &#39;&#39;,
-  message: $args[0]
+  message: State.variables[&quot;args&quot;][0]
 });
 &lt;&lt;/script&gt;&gt;
 

@@ -1,3 +1,9 @@
 :: PassageHeader {"position":"214,125","size":"100,100"}
 <<include "Time">>
 <<updatebar>>
+<<script>>
+const myNotification = window.createNotification({
+      // options here
+			positionClass: 'nfc-bottom-right'
+});
+<</script>>

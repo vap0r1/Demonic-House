@@ -14,7 +14,7 @@
 <</widget>>
 
 
-<<widget "notfication">>
+<<widget "notification">>
 
 <<script>>
 myNotification({

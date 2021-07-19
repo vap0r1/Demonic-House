@@ -1,8 +1,0 @@
-<<widget "ampm">>
-
-<<if $time.hour gte 0 and $time.hour lte 11>>
-am
-<<elseif $time.hour gte 12 and $time.hour lte 23>>
-pm
-<</if>>
-<</widget>>

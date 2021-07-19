@@ -1,0 +1,13 @@
+:: intro_4
+
+
+<<if $quest.intro.broke is 1>>
+  //too far
+<<narration "$char.arid.fname starts to struggle as she begins removing her shirt. Suddenly her eyes regain their focus as she begins to look confused.">>
+<<dialog "arid" "$player.fname What the fuck is going you little dweeb?">>
+<<set $char.arid.will += 5>>
+<<vars "d" $char.arid.rel 5>>
+<<elseif $quest.intro.broke is 2>>
+  //enough
+
+<</if>>

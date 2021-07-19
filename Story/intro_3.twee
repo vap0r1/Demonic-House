@@ -11,19 +11,20 @@
 
  <<narration "Your $char.arid.title's eyes seem to become unfocused and she relaxes slightly.">>
 
-<<bvid "c" "arid" "intro-2a.webm">>
-
-<<narration "$char.arid.fname gets on all fours and turns her ass in your direction. You notice as she speaks her voice has a slightly ethereal quality to it.">>
-
-<<dialog "arid" "Like this?">>
-
 <<bvid "c" "arid" "intro-2b.webm">>
 
-<<dialog "arid" "Or do you prefer me sitting up?">>
+<<narration "$char.arid.fname turns around and starts to shake her ass. You notice as she speaks her voice has a slightly ethereal quality to it.">>
+
+<<dialog "arid" "Like this?">>
+<<dialog "player" "Now bend over so I can get a better look">>
+
+<<bvid "c" "arid" "intro-2a.webm">>
+
+<<dialog "arid" "How am I doing?">>
 
 <<narration "Swallowing back your drool it takes you a moment to respond">>
 
 <<dialog "player" "That's perfect $char.arid.fname.">>
 
-<<action "$char.arid.fname ''Remove your bra''" "intro_4" "<<set $quest.intro.broke to 1>>">>
+<<action "$char.arid.fname ''Remove your top''" "intro_4" "<<set $quest.intro.broke to 1>>">>
 <<action "That's enough." "intro_4" "<<set $quest.intro.broke to 2>>">>

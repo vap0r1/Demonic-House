@@ -74,6 +74,6 @@
 			>>
 	  <</if>>
 	  <div id="bimage" class="bimage">
-		<video src="_img" width="640" height="480" autoplay></video>
+		<video @src="_img" width="640" height="480" autoplay></video>
 	   </div>
 <</widget>>

@@ -12,9 +12,5 @@
   <<narration "Deciding not to push her too far yet, you start pulling your power back and watch as she regains her clarity.">>
   <<dialog "arid" "$player.fname, ">>
 <</if>>
-<<script>>
-myNotification({
-  title: 'Title',
-  message: 'Notification Message' 
-});
-<</script>>
+
+<<notification "testing">>

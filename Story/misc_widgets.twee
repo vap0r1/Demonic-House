@@ -12,3 +12,15 @@
 <</if>>
 
 <</widget>>
+
+
+<<widget "notfication">>
+
+<<script>>
+myNotification({
+  title: '',
+  message: ''$args[0]''
+});
+<</script>>
+
+<</widget>>

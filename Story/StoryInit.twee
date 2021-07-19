@@ -24,6 +24,6 @@ $debug to true
 <<script>>
 const myNotification = window.createNotification({
       // options here
-			positionClass: 'nfc-bottom-right',
+			positionClass: 'nfc-bottom-right'
 });
 <</script>>

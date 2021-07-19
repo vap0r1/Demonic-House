@@ -75,7 +75,7 @@
 	  <</if>>
 	  <div id="bimage" class="bimage">
 		<video id="video" autobuffer autoplay>
-			<source id="webm" @src="_img" type="webm">
+			<source id="webm" @src="_img" type="video/webm">
 		</video>
 	   </div>
 <</widget>>

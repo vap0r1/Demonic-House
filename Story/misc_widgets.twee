@@ -17,9 +17,12 @@
 <<widget "notification">>
 
 <<script>>
+const myNotification = window.createNotification({
+      // options here
+});
 myNotification({
   title: '',
-  message: $args[0]
+  message: State.variables["args"][0]
 });
 <</script>>
 

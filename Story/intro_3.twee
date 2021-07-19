@@ -11,14 +11,14 @@
 
  <<narration "Your $char.arid.title's eyes seem to become unfocused and she relaxes slightly.">>
 
-<<bvid "c" "arid" "intro-2b.webm">>
+<<bvid "c" "arid" "intro-2a.webm">>
 
 <<narration "$char.arid.fname turns around and starts to shake her ass. You notice as she speaks her voice has a slightly ethereal quality to it.">>
 
 <<dialog "arid" "Like this?">>
 <<dialog "player" "Now bend over so I can get a better look">>
 
-<<bvid "c" "arid" "intro-2a.webm">>
+<<bvid "c" "arid" "intro-2b.webm">>
 
 <<dialog "arid" "How am I doing?">>
 

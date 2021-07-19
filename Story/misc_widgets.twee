@@ -3,12 +3,12 @@
 
 <<widget "vars">>
 
-<<if $ARGS[0] is "i">>
-  <<set $ARGS[1] += $ARGS[2]>>
-<<elseif $ARGS[0] is "d">>
-  <<set $ARGS[1] -= $ARGS[2]>>
-<<elseif $ARGS[0] is "s">>
-  <<set $ARGS[1] to $ARGS[2]>>
+<<if $args[0] is "i">>
+  <<set $args[1] += $args[2]>>
+<<elseif $args[0] is "d">>
+  <<set $args[1] -= $args[2]>>
+<<elseif $args[0] is "s">>
+  <<set $args[1] to $args[2]>>
 <</if>>
 
 <</widget>>

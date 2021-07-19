@@ -1,3 +1,4 @@
-:: StoryCaption {"position":"15,180","size":"100,100"} 
-Name: $name 
-Location: $location 
+:: StoryCaption {"position":"15,180","size":"100,100"}
+Day: $time.day<br>
+Time: $time.hour <<ampm>><br>
+Period: <<= $time.period[$time.pod]>>

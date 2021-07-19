@@ -1,1 +1,2 @@
-:: PassageDone {"position":"106,549","size":"100,100"} 
+:: PassageDone {"position":"106,549","size":"100,100"}
+<<replace "#actions">><<display "Actions">><</replace>>

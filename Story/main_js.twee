@@ -1,0 +1,17 @@
+::SomeAwesomeCode [script]
+
+Config.passages.nobr = true;
+
+
+
+
+Config.saves.autosave = ["bookmark", "autosave"];
+Config.saves.id = "DemonHouse";
+Config.passages.descriptions = {
+	"Intro_2" : "description"
+};
+
+
+
+
+$('<div id="actions" data-passage="Actions" class="w3-third"></div>').appendTo(document.getElementById('story'));

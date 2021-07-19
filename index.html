@@ -98,7 +98,8 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 		<div id="init-lacking">Your browser lacks required capabilities. Please upgrade it or switch to another to continue.</div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<!-- UUID://BFBA3BA3-49E5-4C33-BB59-38745BE85547// --><tw-storydata name="Demonic House" startnode="15" creator="Tweego" creator-version="2.1.1" ifid="BFBA3BA3-49E5-4C33-BB59-38745BE85547" zoom="1" format="SugarCube" format-version="2.35.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">.w3-margin-top { 
+	<!-- UUID://BFBA3BA3-49E5-4C33-BB59-38745BE85547// --><tw-storydata name="Demonic House" startnode="15" creator="Tweego" creator-version="2.1.1" ifid="BFBA3BA3-49E5-4C33-BB59-38745BE85547" zoom="1" format="SugarCube" format-version="2.35.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* twine-user-stylesheet #1: "Story Stylesheet" */
+.w3-margin-top { 
 max-width: -webkit-fill-available important; 
 max-width: -moz-available important; 
 } 
@@ -240,12 +241,209 @@ min-width: 100px;
 border-radius: 20px; 
 margin-top: 5px; 
 margin-bottom: 5px; 
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript">Config.passages.nobr = true; 
+}
+/* twine-user-stylesheet #2: "MyCoolStylesheet" */
+.w3-margin-top {
+	max-width: -webkit-fill-available !important;
+  max-width: -moz-available !important;
+}
+
+.w3-margin-top {
+	width: initial;
+}
+html {
+	overflow-x: initial !important;
+}
+
+.w3-third {
+	width: 20% !important;
+}
+
+.w3-display-container {
+	height: -dwebkit-fill-available !important;
+}
+
+#actions {
+	float: right;
+	width: 20%
+}
+
+.w3-twothird {
+	width: 60% !important;
+}
+
+.pro {
+	position: relative;
+	text-align: center;
+}
+
+.pro img {
+	display: block;
+	margin: auto;
+	padding: 1px;
+	height: 84px;
+	width: 84px;
+	float: left;
+	margin: 0px 10px 0px 0px;
+	border: 2px solid white;
+	border-radius: 5px;
+}
+
+.dialog-1 {
+	padding: 5px;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	position: absolute;
+	transform: translate(-10%, -100%);
+}
+
+div.men {
+	color: white;
+	min-height: 105px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: left;
+	background-color: #222222;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	border: 2px solid white;
+	border-radius: 5px;
+	padding: 8px 8px 8px 8px;
+	box-shadow: 5px 5px 3px Black;
+}
+
+div.men2 {
+	color: white;
+	text-align: left;
+	margin-top: 20px;
+  	margin-bottom: 20px;
+	background-color: #222222;
+	border: 2px solid white;
+	border-radius: 5px;
+	padding: 8px 8px 8px 8px;
+	box-shadow: 5px 5px 3px Black;
+}
+
+@-webkit-keyframes glow {
+	from {
+		box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #fff, 0 0 5px #fff, 0 0 6px #fff, 0 0 7px #fff;
+	}
+	to {
+		box-shadow: 0 0 3px slategrey, 0 0 3px slategrey, 0 0 4px slategrey, 0 0 5px slategrey, 0 0 6px slategrey, 0 0 7px slategrey, 0 0 8px slategrey;
+	}
+}
+
+.bimage img {
+	max-height: 600px;
+    max-width: -webkit-fill-available;
+  	max-width: -moz-available;
+	margin-top: 20px;
+	margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	position: relative;
+	border-radius: 25px;
+	border: 2px solid lightblue;
+}
+
+#actions {
+	position: sticky;
+	top: 16px;
+}
+
+#meddnu {
+	position: sticky;
+	top: 16px;
+}
+
+.locations {
+	margin-left: 15px;
+	display: inline-flex;
+	flex-wrap: wrap;
+}
+
+.location {
+	max-width: 68px;
+	width: 68px;
+	/* position: relative; */
+	position: relative;
+	margin: 5px;
+	/* float: left; */
+}
+
+.location:hover {
+	transform: scale(1.05);
+}
+
+.grey {
+	filter: grayscale(100%);
+}
+
+.grey:hover {
+	transform: scale(1);
+}
+
+.locations img {
+	height: 68px;
+	width: 68px;
+	border-radius: 10%;
+}
+
+.location-name {
+	position: absolute;
+	bottom: 0px;
+	color: white;
+}
+
+.action-bar {
+	display: inline-block;
+    width: -webkit-fill-available;
+  	width: -moz-available;
+	margin: 5px;
+}
+
+.macro-button {
+    width: -webkit-fill-available;
+	width: -moz-available;
+  	min-width: 100px;
+	border-radius: 20px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+
+
+
+#story {
+	display: block ruby;
+}
+
+#passages {
+	margin-left: 5%;
+	max-width: 70%;
+  	min-width: 70%;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript">/* twine-user-script #1: "Story JavaScript" */
+Config.passages.nobr = true; 
 Config.saves.autosave = ["bookmark", "autosave"]; 
 Config.saves.id = "DemonHouse"; 
 Config.passages.descriptions = { 
 "Intro_2" : "description" 
-};</script><tw-tag name="Widget" color="purple"></tw-tag><tw-passagedata pid="1" name="Actions" tags="" position="10,439" size="100,100">&lt;div class=&quot;w3-white w3-text-grey w3-card-4&quot;&gt;
+};
+/* twine-user-script #2: "SomeAwesomeCode" */
+Config.passages.nobr = true;
+
+
+
+
+Config.saves.autosave = ["bookmark", "autosave"];
+Config.saves.id = "DemonHouse";
+Config.passages.descriptions = {
+	"Intro_2" : "description"
+};
+
+
+
+
+$('<div id="actions" data-passage="Actions" class="w3-third"></div>').appendTo(document.getElementById('story'));</script><tw-tag name="Widget" color="purple"></tw-tag><tw-passagedata pid="1" name="Actions" tags="" position="10,439" size="100,100">&lt;div class=&quot;w3-white w3-text-grey w3-card-4&quot;&gt;
         &lt;div class=&quot;w3-display-container&quot;&gt;
 			&lt;div id=&quot;locations-title&quot;&gt;&lt;p style=&quot;color: black;text-align: center;background-color: grey;margin: unset;&quot;&gt;Locations&lt;/p&gt;&lt;/div&gt;
 &lt;div id=&quot;locations&quot; class=&quot;locations&quot;&gt;
@@ -646,7 +844,8 @@ Config.saves.onLoad = function (save) {
 alert(&quot;loaded&quot;); 
 Engine.play(&quot;Save-Update&quot;, true) 
 }; 
-*/</tw-passagedata><tw-passagedata pid="10" name="PassageDone" tags="" position="106,549" size="100,100"></tw-passagedata><tw-passagedata pid="11" name="PassageHeader" tags="" position="214,125" size="100,100">&lt;&lt;include &quot;Time&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="12" name="Player-Init" tags="" position="822,1" size="100,100">&lt;&lt;set $player to {
+*/</tw-passagedata><tw-passagedata pid="10" name="PassageDone" tags="" position="106,549" size="100,100">&lt;&lt;replace &quot;#actions&quot;&gt;&gt;&lt;&lt;display &quot;Actions&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;</tw-passagedata><tw-passagedata pid="11" name="PassageHeader" tags="" position="214,125" size="100,100">&lt;&lt;include &quot;Time&quot;&gt;&gt;
+&lt;&lt;updatebar&gt;&gt;</tw-passagedata><tw-passagedata pid="12" name="Player-Init" tags="" position="822,1" size="100,100">&lt;&lt;set $player to {
 					&quot;fname&quot;: &quot;Chris&quot;,
 					lname: &quot;Jones&quot;,
 					title: &quot;Research Asistant&quot;,
@@ -679,8 +878,9 @@ $quest.intro.run to 1
 &lt;&lt;act &quot;Your $char.laud.title leaves the room&quot;&gt;&gt; 
 &lt;&lt;narration &quot;You just grunt your assent as you proceed to unpack your meager belongings. Seeing your response your $char.laud.title leaves the room, shutting the door behind her.&quot;&gt;&gt; 
 &lt;&lt;move &quot;c&quot; &quot;laud&quot; &quot;blank&quot; &quot;blank&quot;&gt;&gt; 
-&lt;&lt;action &quot;Unpack Boxes&quot; &quot;Intro_1&quot; &quot;&lt;&lt;set $quest.intro.unpack to 1&gt;&gt;&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="16" name="StoryAuthor" tags="" position="228,5" size="100,100">By JulianD</tw-passagedata><tw-passagedata pid="17" name="StoryCaption" tags="" position="15,180" size="100,100">Name: $name 
-Location: $location</tw-passagedata><tw-passagedata pid="18" name="StoryInit" tags="" position="656,1" size="100,100">&lt;&lt;set
+&lt;&lt;action &quot;Unpack Boxes&quot; &quot;Intro_1&quot; &quot;&lt;&lt;set $quest.intro.unpack to 1&gt;&gt;&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="16" name="StoryAuthor" tags="" position="228,5" size="100,100">By JulianD</tw-passagedata><tw-passagedata pid="17" name="StoryCaption" tags="" position="15,180" size="100,100">Day: $time.day&lt;br&gt;
+Time: $time.hour &lt;&lt;ampm&gt;&gt;&lt;br&gt;
+Period: &lt;&lt;= $time.period[$time.pod]&gt;&gt;</tw-passagedata><tw-passagedata pid="18" name="StoryInit" tags="" position="656,1" size="100,100">&lt;&lt;set
 $imgpre to &quot;http://127.0.0.1/dh&quot;,
 $company to &quot;TestCo&quot;
 &gt;&gt;
@@ -698,39 +898,44 @@ $company to &quot;TestCo&quot;
 &lt;&lt;include &quot;Player-Init&quot;&gt;&gt;
 &lt;&lt;include &quot;Character-Init&quot;&gt;&gt;
 &lt;&lt;include &quot;Locations-Init&quot;&gt;&gt;
-&lt;&lt;include &quot;Time-Init&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="19" name="StoryMenu" tags="" position="16,294" size="100,100">[[New story link|Start]]</tw-passagedata><tw-passagedata pid="20" name="StorySubtitle" tags="" position="514,3" size="100,100">Version: 0.0.1</tw-passagedata><tw-passagedata pid="21" name="Text Widgets" tags="widget" position="1453,70" size="100,100">&lt;&lt;widget &quot;dialog&quot;&gt;&gt; 
-&lt;&lt;portrait $args[0]&gt;&gt; 
-&lt;&lt;if $args[&#39;0&#39;] == &quot;author&quot;&gt;&gt; 
-&lt;&lt;set  
-_name to &quot;Mysterious Figure&quot;, 
-_color to &quot;background-color:black&quot;	 
-&gt;&gt; 
-&lt;&lt;elseif $args[&#39;0&#39;] == &quot;player&quot;&gt;&gt; 
-&lt;&lt;set  
-_name to &quot;You&quot;, 
-_color to &quot;background-color:darkgrey&quot; 
-&gt;&gt; 
-&lt;&lt;else&gt;&gt; 
-&lt;&lt;set  
-_name to $char[$args[&#39;0&#39;]].display, 
-_color to &quot;background-color:&quot; + $char[$args[&#39;0&#39;]].color	 
-&gt;&gt; 
-&lt;&lt;/if&gt;&gt; 
-&lt;div class=&quot;men&quot; @style=&quot;_color&quot;&gt;&lt;div class=&quot;pro&quot;&gt;[img[$portt]]&lt;/div&gt; 
-&lt;b&gt;&lt;&lt;=_name&gt;&gt;&lt;/b&gt;: 
-&lt;br&gt; 
-&lt;p style=&quot;mix-blend-mode: exclusion;&quot;&gt;&lt;&lt;print $args[1]&gt;&gt;&lt;/p&gt; 
-&lt;/div&gt; 
-&lt;&lt;/widget&gt;&gt; 
-/* Narration */ 
-&lt;&lt;widget &quot;narration&quot;&gt;&gt; 
-&lt;div class=&quot;men2&quot;&gt; 
-&lt;&lt;print $args[0]&gt;&gt; 
-&lt;/div&gt; 
-&lt;&lt;/widget&gt;&gt; 
-&lt;&lt;widget &quot;act&quot;&gt;&gt; 
-&lt;p style=&quot;color: DarkOrange&quot;&gt;&lt;center&gt;****&lt;&lt;=$args[&#39;0&#39;]&gt;&gt;****&lt;/center&gt;&lt;/p&gt; 
-&lt;&lt;/widget&gt;&gt;</tw-passagedata><tw-passagedata pid="22" name="Time-Init" tags="" position="1192,1" size="100,100">&lt;&lt;set $time to {
+&lt;&lt;include &quot;Time-Init&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="19" name="StoryMenu" tags="" position="16,294" size="100,100">[[New story link|Start]]</tw-passagedata><tw-passagedata pid="20" name="StorySubtitle" tags="" position="514,3" size="100,100">Version: 0.0.1</tw-passagedata><tw-passagedata pid="21" name="Text Widgets" tags="widget" position="1453,70" size="100,100">&lt;&lt;widget &quot;dialog&quot;&gt;&gt;
+&lt;&lt;portrait $args[0]&gt;&gt;
+&lt;&lt;if $args[&#39;0&#39;] == &quot;author&quot;&gt;&gt;
+&lt;&lt;set
+_name to &quot;Mysterious Figure&quot;,
+_color to &quot;background-color:black&quot;
+&gt;&gt;
+&lt;&lt;elseif $args[&#39;0&#39;] == &quot;player&quot;&gt;&gt;
+&lt;&lt;set
+_name to &quot;You&quot;,
+_color to &quot;background-color:darkgrey&quot;
+&gt;&gt;
+&lt;&lt;else&gt;&gt;
+&lt;&lt;set
+_name to $char[$args[&#39;0&#39;]].display,
+_color to &quot;background-color:&quot; + $char[$args[&#39;0&#39;]].color
+&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+&lt;div class=&quot;men&quot; @style=&quot;_color&quot;&gt;&lt;div class=&quot;pro&quot;&gt;[img[$portt]]&lt;/div&gt;
+&lt;b&gt;&lt;&lt;=_name&gt;&gt;&lt;/b&gt;:
+&lt;br&gt;
+&lt;p style=&quot;mix-blend-mode: exclusion;&quot;&gt;&lt;&lt;print $args[1]&gt;&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;&lt;/widget&gt;&gt;
+/* Narration */
+&lt;&lt;widget &quot;narration&quot;&gt;&gt;
+&lt;div class=&quot;men2&quot;&gt;
+&lt;&lt;print $args[0]&gt;&gt;
+&lt;/div&gt;
+&lt;&lt;/widget&gt;&gt;
+&lt;&lt;widget &quot;act&quot;&gt;&gt;
+&lt;p style=&quot;color: DarkOrange&quot;&gt;&lt;center&gt;****&lt;&lt;=$args[&#39;0&#39;]&gt;&gt;****&lt;/center&gt;&lt;/p&gt;
+&lt;&lt;/widget&gt;&gt;
+
+&lt;&lt;widget &quot;updatebar&quot;&gt;&gt;&lt;&lt;silently&gt;&gt;
+&lt;&lt;replace &quot;#story-banner&quot;&gt;&gt;&lt;&lt;display &quot;StoryBanner&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;
+&lt;&lt;replace &quot;#story-caption&quot;&gt;&gt;&lt;&lt;display &quot;StoryCaption&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;
+&lt;&lt;/silently&gt;&gt;&lt;&lt;/widget&gt;&gt;</tw-passagedata><tw-passagedata pid="22" name="Time-Init" tags="" position="1192,1" size="100,100">&lt;&lt;set $time to {
 					hour: 11,
 					day: 1,
 					pod: 1, /* 0 early morning, 1 morning, 2 afternoon, 3 evening, 4 night*/

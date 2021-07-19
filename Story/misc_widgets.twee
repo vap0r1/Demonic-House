@@ -5,10 +5,10 @@
 
 <<if $args[0] is "i">>
   <<set $args[1] += $args[2]>>
-  <<notification "Success" $args[1] . " +" . $args[2]>>
+  <<notification "Success" "$args[1] +$args[2]">>
 <<elseif $args[0] is "d">>
   <<set $args[1] -= $args[2]>>
-  <<notification "warning" $args[1] . " -" . $args[2]>>
+  <<notification "warning" "$args[1] -$args[2]">>
 <<elseif $args[0] is "s">>
   <<set $args[1] to $args[2]>>
 <</if>>
@@ -21,9 +21,10 @@
 <<script>>
 const myNotification = window.createNotification();
 myNotification({
+theme: State.variables["args"][0],
   title: '',
-  message: State.variables["args"][1],
-  theme: State.variables["args"][0]
+  message: State.variables["args"][1]
+
 });
 <</script>>
 

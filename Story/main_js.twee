@@ -12,9 +12,6 @@ Config.passages.descriptions = {
 };
 
 
-const myNotification = window.createNotification({
-      // options here
-});
 
 
 $('<div id="actions" data-passage="Actions" class="w3-third"></div>').appendTo(document.getElementById('story'));

@@ -964,7 +964,7 @@ $debug to true
 &lt;&lt;script&gt;&gt;
 const myNotification = window.createNotification({
       // options here
-			positionClass: &#39;nfc-bottom-right&#39;,
+			positionClass: &#39;nfc-bottom-right&#39;
 });
 &lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="19" name="StoryMenu" tags="" position="16,294" size="100,100">[[New story link|Start]]</tw-passagedata><tw-passagedata pid="20" name="StorySubtitle" tags="" position="514,3" size="100,100">Version: 0.0.1</tw-passagedata><tw-passagedata pid="21" name="Text Widgets" tags="widget" position="1453,70" size="100,100">&lt;&lt;widget &quot;dialog&quot;&gt;&gt;
 &lt;&lt;portrait $args[0]&gt;&gt;
@@ -1126,12 +1126,8 @@ $system.locations to 1
   &lt;&lt;narration &quot;Deciding not to push her too far yet, you start pulling your power back and watch as she regains her clarity.&quot;&gt;&gt;
   &lt;&lt;dialog &quot;arid&quot; &quot;$player.fname, &quot;&gt;&gt;
 &lt;&lt;/if&gt;&gt;
-&lt;&lt;script&gt;&gt;
-myNotification({
-  title: &#39;Title&#39;,
-  message: &#39;Notification Message&#39; 
-});
-&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="32" name="lab_intro_4" tags="" position="0,847" size="100,100">&lt;&lt;narration &quot;As you start to make the adjustments an idea occurs to you to also change the data being sent. You quickly type up a short document with commands for $char.kyler.fname to touch herself. Almost immediately you notice a stronger reaction from $char.kyler.fname.&quot;&gt;&gt; 
+
+&lt;&lt;notification &quot;testing&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="32" name="lab_intro_4" tags="" position="0,847" size="100,100">&lt;&lt;narration &quot;As you start to make the adjustments an idea occurs to you to also change the data being sent. You quickly type up a short document with commands for $char.kyler.fname to touch herself. Almost immediately you notice a stronger reaction from $char.kyler.fname.&quot;&gt;&gt; 
 &lt;&lt;bimg &quot;c&quot; &quot;kyler&quot; &quot;intro6.jpg&quot;&gt;&gt; 
 &lt;&lt;dialog &quot;kyler&quot; &quot;Nooo... Why does.. Why does it feel even better now? No. I don&#39;t want to touch myself...&quot;&gt;&gt; 
 &lt;&lt;narration &quot;$char.kyler.fname stands up and seems to be struggling with the commands. So you raise the amplitude again.&quot;&gt;&gt; 
@@ -1172,6 +1168,18 @@ myNotification({
 &lt;&lt;elseif $args[0] is &quot;s&quot;&gt;&gt;
   &lt;&lt;set $args[1] to $args[2]&gt;&gt;
 &lt;&lt;/if&gt;&gt;
+
+&lt;&lt;/widget&gt;&gt;
+
+
+&lt;&lt;widget &quot;notfication&quot;&gt;&gt;
+
+&lt;&lt;script&gt;&gt;
+myNotification({
+  title: &#39;&#39;,
+  message: &#39;&#39;$args[0]&#39;&#39;
+});
+&lt;&lt;/script&gt;&gt;
 
 &lt;&lt;/widget&gt;&gt;</tw-passagedata><tw-passagedata pid="36" name="old location widget" tags="" position="1733,45" size="100,100">&lt;&lt;widget &quot;locations&quot;&gt;&gt; 
 &lt;&lt;for _i, _name range $locs[$player.loc_main]&gt;&gt; 

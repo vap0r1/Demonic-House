@@ -19,11 +19,3 @@ $debug to true
 <<include "Character-Init">>
 <<include "Locations-Init">>
 <<include "Time-Init">>
-
-
-<<script>>
-const myNotification = window.createNotification({
-      // options here
-			positionClass: 'nfc-bottom-right'
-});
-<</script>>

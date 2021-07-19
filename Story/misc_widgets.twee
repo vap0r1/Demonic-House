@@ -19,7 +19,7 @@
 <<script>>
 myNotification({
   title: '',
-  message: ''$args[0]''
+  message: $args[0]
 });
 <</script>>
 

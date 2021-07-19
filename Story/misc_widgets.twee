@@ -17,9 +17,7 @@
 <<widget "notification">>
 
 <<script>>
-const myNotification = window.createNotification({
-      // options here
-});
+const myNotification = window.createNotification();
 myNotification({
   title: '',
   message: State.variables["args"][0]

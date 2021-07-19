@@ -1,4 +1,9 @@
 :: StoryCaption {"position":"15,180","size":"100,100"}
 Day: $time.day<br>
 Time: $time.hour <<ampm>><br>
-Period: <<= $time.period[$time.pod]>>
+Period: <<= $time.period[$time.pod]>><br>
+
+
+<<if $debug is true>>
+  <<print passage()>>
+<</if>>

@@ -945,22 +945,30 @@ _color to &quot;background-color:&quot; + $char[$args[&#39;0&#39;]].color
 	weekday: [&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;,&quot;Sunday&quot;],
 	period: [&quot;Early Morning&quot;,&quot;Morning&quot;,&quot;Afternoon&quot;,&quot;Evening&quot;,&quot;Night&quot;]
 	}
-&gt;&gt;</tw-passagedata><tw-passagedata pid="23" name="Time Widgets" tags="widget" position="1301,182" size="100,100"></tw-passagedata><tw-passagedata pid="24" name="Time" tags="" position="332,128" size="100,100">&lt;&lt;if $time.hour gte 23&gt;&gt; 
-&lt;&lt;set  
-$time.hour to 0, 
-$time.day++, 
-$time.pod to 4, 
-$time.dow++ 
-&gt;&gt; 
-&lt;&lt;elseif $time.hour gte 18 and $time.hour lte 23&gt;&gt; 
-&lt;&lt;set $time.pod to 3&gt;&gt; 
-&lt;&lt;elseif $time.hour gte 12 and $time.hour lte 17&gt;&gt; 
-&lt;&lt;set $time.pod to 2&gt;&gt; 
-&lt;&lt;elseif $time.hour gte 8 and $time.hour lte 11&gt;&gt; 
-&lt;&lt;set $time.pod to 1&gt;&gt; 
-&lt;&lt;elseif $time.hour gte 4 and $time.hour lte 7&gt;&gt; 
-&lt;&lt;set $time.pod to 0&gt;&gt; 
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="25" name="Untitled Passage 1" tags="" position="1500,865" size="100,100">&lt;&lt;set
+&gt;&gt;</tw-passagedata><tw-passagedata pid="23" name="Time Widgets" tags="widget" position="1301,182" size="100,100"></tw-passagedata><tw-passagedata pid="24" name="Time" tags="" position="332,128" size="100,100">&lt;&lt;if $time.hour gte 23&gt;&gt;
+&lt;&lt;set
+$time.hour to 0,
+$time.day++,
+$time.pod to 4,
+$time.dow++
+&gt;&gt;
+&lt;&lt;elseif $time.hour gte 18 and $time.hour lte 23&gt;&gt;
+&lt;&lt;set $time.pod to 3&gt;&gt;
+&lt;&lt;elseif $time.hour gte 12 and $time.hour lte 17&gt;&gt;
+&lt;&lt;set $time.pod to 2&gt;&gt;
+&lt;&lt;elseif $time.hour gte 8 and $time.hour lte 11&gt;&gt;
+&lt;&lt;set $time.pod to 1&gt;&gt;
+&lt;&lt;elseif $time.hour gte 4 and $time.hour lte 7&gt;&gt;
+&lt;&lt;set $time.pod to 0&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;widget &quot;ampm&quot;&gt;&gt;
+
+&lt;&lt;if $time.hour gte 0 and $time.hour lte 11&gt;&gt;
+am
+&lt;&lt;elseif $time.hour gte 12 and $time.hour lte 23&gt;&gt;
+pm
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;/widget&gt;&gt;</tw-passagedata><tw-passagedata pid="25" name="Untitled Passage 1" tags="" position="1500,865" size="100,100">&lt;&lt;set
 $player.loc_main to &quot;company&quot;,
 $player.loc_sub to &quot;boss_office&quot;,
 $locs.company.lab_main.found to 1,

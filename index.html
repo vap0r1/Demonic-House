@@ -1159,10 +1159,10 @@ $system.locations to 1
 
 &lt;&lt;if $args[0] is &quot;i&quot;&gt;&gt;
   &lt;&lt;set $args[1] += $args[2]&gt;&gt;
-  &lt;&lt;notification &quot;Success&quot; $args[1] . &quot; +&quot; . $args[2]&gt;&gt;
+  &lt;&lt;notification &quot;Success&quot; &quot;$args[1] +$args[2]&quot;&gt;&gt;
 &lt;&lt;elseif $args[0] is &quot;d&quot;&gt;&gt;
   &lt;&lt;set $args[1] -= $args[2]&gt;&gt;
-  &lt;&lt;notification &quot;warning&quot; $args[1] . &quot; -&quot; . $args[2]&gt;&gt;
+  &lt;&lt;notification &quot;warning&quot; &quot;$args[1] -$args[2]&quot;&gt;&gt;
 &lt;&lt;elseif $args[0] is &quot;s&quot;&gt;&gt;
   &lt;&lt;set $args[1] to $args[2]&gt;&gt;
 &lt;&lt;/if&gt;&gt;
@@ -1175,9 +1175,10 @@ $system.locations to 1
 &lt;&lt;script&gt;&gt;
 const myNotification = window.createNotification();
 myNotification({
+theme: State.variables[&quot;args&quot;][0],
   title: &#39;&#39;,
-  message: State.variables[&quot;args&quot;][1],
-  theme: State.variables[&quot;args&quot;][0]
+  message: State.variables[&quot;args&quot;][1]
+
 });
 &lt;&lt;/script&gt;&gt;
 
